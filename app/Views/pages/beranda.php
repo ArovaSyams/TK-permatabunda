@@ -8,6 +8,7 @@
         <a href="#" class="btn btn-primary col-2">Daftar sekarang</a>
     </div>
 </div>
+
 <div class="main-1">
     <h2>KEGIATAN PEMBELAJARAN DI SEKOLAH</h2>
     <div class="cards-view">
@@ -43,6 +44,17 @@
                 <a href="#" class="btn btn-primary">Selengkapnya</a>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="main-2">
+    <div class="foto">
+        <img src="/img/ip man 4-bg.jpg" alt="">
+    </div>
+    <div class="tentang">
+        <h2>Tentang Kami</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab adipisci, id optio inventore veritatis architecto sed quia cupiditate. Inventore placeat quae esse quidem voluptas ipsa alias beatae mollitia expedita maiores.</p>
+        <a href="">Selengkapnya</a>
     </div>
 </div>
 <?= $this->endSection(); ?>

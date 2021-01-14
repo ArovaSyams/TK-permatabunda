@@ -11,6 +11,8 @@ body {
   margin-right: 50px;
 }
 
+/* _______________Navbar________________ */
+
 .navbar {
   width: 100%;
   position: fixed;
@@ -27,6 +29,9 @@ body {
 }
 .nav ul li a {
   font-weight: 500;
+}
+.active {
+  color: wheat;
 }
 /* ----------- Main-Header------------- */
 .main-header {
@@ -63,7 +68,7 @@ body {
 }
 .cards-view {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 .card {
   margin: 0px 20px;
@@ -72,6 +77,24 @@ body {
   font-size: 70px;
   text-align: center;
   margin-top: 33px;
+}
+
+/* ____________________________main-2____________________________ */
+
+.main-2 {
+  height: 352px;
+  width: 100%;
+  background-color:#DEDEDE;
+}
+.foto img {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.tentang {
+  padding: 100px 40px;
+  float: left;
+  width: 50%;
 }
 
 /* ____________________________Footer____________________________ */

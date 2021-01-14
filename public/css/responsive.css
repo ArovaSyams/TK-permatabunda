@@ -36,16 +36,15 @@
       }
     .logo {
         color: black;
-        font-size: 8px;
+        font-size: 10px;
 
       }
     .main-header {
-        padding: 100px 20px;    
-        background-size: 400px;    
-        height: 60vh;
+        padding: 100px 20px;     
+        height: 50vh;
     }
     .header1 h1 {
-        font-size: 40px;
+        font-size: 35px;
     }
     .header1 p {
         margin-top: 20px;
@@ -65,9 +64,24 @@
     .cards-view {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 40px;
     }
     .card {
         margin: 15px 0px;
+    }
+
+    /* _____________main-2____________ */
+
+    .main-2 {
+        flex-direction: column;
+        height: 500px;
+      }
+    .foto img {
+        width: 100%;
+    }
+    .tentang {
+        padding-top: 30px;
+        width: 100%;
     }
 
     /* ______________Footer____________ */
