@@ -32,7 +32,7 @@
             <div class="card-body text-center">
                 <h5 class="card-title">Ekstrakulikuler</h5>
                 <p class="card-text">Ekskul untuk meningkatkan bakat minat murid</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-primary">Selengkapnya</a>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
@@ -40,7 +40,7 @@
             <div class="card-body text-center">
                 <h5 class="card-title">Program Unggulan</h5>
                 <p class="card-text">Sebagai penunjang kualitas murid</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-primary">Selengkapnya</a>
             </div>
         </div>
     </div>
