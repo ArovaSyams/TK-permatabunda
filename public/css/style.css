@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  height: 200vh;
+}
+.brand {
+  margin-right: 50px;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+.ppdb {
+  margin-right: 20px;
+  border-radius: 10px;
+  width: 90px;
+}
+a.active, a:hover {
+  color: black;
+  transition: .5s;
+}
+.logo {
+  font-weight: 600;
+}
+/* ----------- Main-Header------------- */
+.main-header {
+  background-image: url(/img/frozen2-bg.jpg);
+  background-size: cover;
+  height: 600px;
+  padding-top: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.header1 h1 {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+.header1 p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
