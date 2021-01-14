@@ -5,9 +5,10 @@
             <p>&copy 2020 Taman Kanak-kanak Permata Bunda Bengkulu | Stackware comp. | All Right Reserved</p>
         </div>
         <div class="medsos">
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-envelope-fill"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-facebook media"></i></a>
+            <a href=""><i class="bi bi-envelope-fill media"></i></a>
+            <a href=""><i class="bi bi-instagram media"></i></a>
+            <a href=""><i class="bi bi-whatsapp media"></i></a>
         </div>
     </div>
 </footer>

@@ -12,30 +12,34 @@
     <h2>KEGIATAN PEMBELAJARAN DI SEKOLAH</h2>
     <div class="cards-view">
         <div class="card" style="width: 18rem;">
+            <i class="fas fa-book img"></i>
             <div class="card-body text-center">
                 <h5 class="card-title">Kegiatan Formal Sekolah</h5>
-                <p class="card-text">ngan kegiatan ekstrakurikuler dan pembinaan kedisiplinan</p>
+                <p class="card-text">Sistem pembelajaran sesuai kurikulum</p>
+                <a href="#" class="btn btn-primary">Selengkapnya</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <i class="fas fa-mosque img"></i>
+            <div class="card-body text-center">
+                <h5 class="card-title">Pendidikan Islami</h5>
+                <p class="card-text">Menjalankan kewajiban terhadap Tuhan YME.</p>
+                <a href="#" class="btn btn-primary">Selengkapnya</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <i class="fas fa-futbol img"></i>
+            <div class="card-body text-center">
+                <h5 class="card-title">Ekstrakulikuler</h5>
+                <p class="card-text">Ekskul untuk meningkatkan bakat minat murid</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
+            <i class="far fa-lightbulb img"></i>
             <div class="card-body text-center">
-                <h5 class="card-title">Kegiatan Formal Sekolah</h5>
-                <p class="card-text">Sistem pembelajaran FULL DAY SCHOOL (07.00 - 16.00 WIB) kurikulum 2013, dengan kegiatan ekstrakurikuler dan pembinaan kedisiplinan</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <div class="card-body text-center">
-                <h5 class="card-title">Kegiatan Formal Sekolah</h5>
-                <p class="card-text">Sistem pembelajaran FULL DAY SCHOOL (07.00 - 16.00 WIB) kurikulum 2013, dengan kegiatan ekstrakurikuler dan pembinaan kedisiplinan</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <div class="card-body text-center">
-                <h5 class="card-title">Kegiatan Formal Sekolah</h5>
-                <p class="card-text">Sistem pembelajaran FULL DAY SCHOOL (07.00 - 16.00 WIB) kurikulum 2013, dengan kegiatan ekstrakurikuler dan pembinaan kedisiplinan</p>
+                <h5 class="card-title">Program Unggulan</h5>
+                <p class="card-text">Sebagai penunjang kualitas murid</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>

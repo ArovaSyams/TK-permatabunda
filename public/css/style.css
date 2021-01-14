@@ -41,7 +41,7 @@ body {
   text-align: center;
 }
 .header1 a {
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .header1 h1 {
   text-align: center;
@@ -54,11 +54,12 @@ body {
   font-size: 20px;
 }
 
-/* ____________________________main-2___________________________ */
+/* ____________________________main-1___________________________ */
 
-.main-1 h2{
+.main-1 h2 {
   text-align: center;
-  margin: 30px 0;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 .cards-view {
   display: flex;
@@ -67,7 +68,11 @@ body {
 .card {
   margin: 0px 20px;
 }
-
+.img {
+  font-size: 70px;
+  text-align: center;
+  margin-top: 33px;
+}
 
 /* ____________________________Footer____________________________ */
 footer {
@@ -84,10 +89,9 @@ footer {
   font-size: 15px;
   opacity: 0.7;
 }
-.bi {
+.media {
   color: white;
   margin: 0 10px;
   font-size: 35px;
   cursor: pointer;
 }
-
