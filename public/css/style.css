@@ -188,6 +188,7 @@ footer {
   background-color: #022534;
   margin: 0;
   padding: 90px 60px;
+  display: flex;
 }
 .judul h3 {
   color: white;
@@ -203,4 +204,8 @@ footer {
   margin: 0 10px;
   font-size: 35px;
   cursor: pointer;
+}
+.login {
+  margin: 0px 70px;
+  color: #fff;
 }

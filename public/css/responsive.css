@@ -92,4 +92,10 @@
   .judul h3 {
     font-size: 30px;
   }
+  footer {
+      flex-direction: column;
+  }
+  .login {
+      margin: 20px 0;
+  }
 }
