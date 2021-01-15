@@ -3,58 +3,130 @@
 <?= $this->section('content'); ?>
 <div class="main-header">
     <div class="header1">
-        <h1>TK PERMATA BUNDA BENGKULU</h1>
+        <h1 data-aos="fade-down" data-aos-duration="1500">TK PERMATA BUNDA BENGKULU</h1>
         <p>Taman Kanak-kanak Permata Bunda adalah TK yang berbasis islami dibawah naungan DWP (Dharma Wanita Persatuan) IAIN Bengkulu </p>
-        <a href="#" class="btn btn-primary col-2">Daftar sekarang</a>
+        <a data-aos="fade-up" data-aos-duration="1500" href="#" class="btn btn-primary col-2">Daftar sekarang</a>
     </div>
 </div>
 
 <div class="main-1">
     <h2>KEGIATAN PEMBELAJARAN DI SEKOLAH</h2>
     <div class="cards-view">
-        <div class="card" style="width: 18rem;">
+        <div data-aos="fade-down" data-aos-duration="1500" class="card" style="width: 18rem;">
             <i class="fas fa-book img"></i>
             <div class="card-body text-center">
                 <h5 class="card-title">Kegiatan Formal Sekolah</h5>
                 <p class="card-text">Sistem pembelajaran sesuai kurikulum</p>
-                <a href="#" class="btn btn-primary">Selengkapnya</a>
+                <a href="#" class="btn btn-success">Selengkapnya</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div data-aos="fade-up" data-aos-duration="1500" class="card" style="width: 18rem;">
             <i class="fas fa-mosque img"></i>
             <div class="card-body text-center">
                 <h5 class="card-title">Pendidikan Islami</h5>
                 <p class="card-text">Menjalankan kewajiban terhadap Tuhan YME.</p>
-                <a href="#" class="btn btn-primary">Selengkapnya</a>
+                <a href="#" class="btn btn-success">Selengkapnya</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div data-aos="fade-down" data-aos-duration="1500" class="card" style="width: 18rem;">
             <i class="fas fa-futbol img"></i>
             <div class="card-body text-center">
                 <h5 class="card-title">Ekstrakulikuler</h5>
-                <p class="card-text">Ekskul untuk meningkatkan bakat minat murid</p>
-                <a href="#" class="btn btn-primary">Selengkapnya</a>
+                <p class="card-text">Ekskul untuk meningkatkan bakat minat siswa</p>
+                <a href="#" class="btn btn-success">Selengkapnya</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div data-aos="fade-up" data-aos-duration="1500" class="card" style="width: 18rem;">
             <i class="far fa-lightbulb img"></i>
             <div class="card-body text-center">
                 <h5 class="card-title">Program Unggulan</h5>
-                <p class="card-text">Sebagai penunjang kualitas murid</p>
-                <a href="#" class="btn btn-primary">Selengkapnya</a>
+                <p class="card-text">Sebagai penunjang kualitas siswa</p>
+                <a href="#" class="btn btn-success">Selengkapnya</a>
             </div>
         </div>
     </div>
 </div>
 
 <div class="main-2">
-    <div class="foto">
-        <img src="/img/ip man 4-bg.jpg" alt="">
+    <div class="foto" data-aos="fade-right" data-aos-duration="1500"  data-aos-offset="350">
+        <img src="/img/how to train 3-bg.jpg" alt="">
     </div>
-    <div class="tentang">
+    <div class="tentang" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-offset="350">
         <h2>Tentang Kami</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab adipisci, id optio inventore veritatis architecto sed quia cupiditate. Inventore placeat quae esse quidem voluptas ipsa alias beatae mollitia expedita maiores.</p>
         <a href="">Selengkapnya</a>
+    </div>
+</div>
+
+<div class="main-3">
+    <h2 class="head">BERITA TERKINI</h2>
+    <div class="berita-card">
+        <div class="cards">
+            <div class="imgbx">
+                <img src="/img/vec.jpg" alt="">
+            </div>
+            <div class="berita">
+                <h2>Berita Terkini</h2>
+                <p>et consectetur adipisicing elit. Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi reprehenderit consequatur.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="imgbx">
+                <img src="/img/vec.jpg" alt="">
+            </div>
+            <div class="berita">
+                <h2>Berita Terkini</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi reprehenderit consequatur.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="imgbx">
+                <img src="/img/vec.jpg" alt="">
+            </div>
+            <div class="berita">
+                <h2>Berita Terkini</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi reprehenderit consequatur.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="imgbx">
+                <img src="/img/vec.jpg" alt="">
+            </div>
+            <div class="berita">
+                <h2>Berita Terkini</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi reprehenderit consequatur.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="imgbx">
+                <img src="/img/vec.jpg" alt="">
+            </div>
+            <div class="berita">
+                <h2>Berita Terkini</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi reprehenderit consequatur.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="imgbx">
+                <img src="/img/vec.jpg" alt="">
+            </div>
+            <div class="berita">
+                <h2>Berita Terkini</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi reprehenderit consequatur.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-4">
+    <div class="scroll">
+        <div class="item">ITEM</div>
+        <div class="item">ITEM</div>
+        <div class="item">ITEM</div>
+        <div class="item">ITEM</div>
+        <div class="item">ITEM</div>
+        <div class="item">ITEM</div>
+        <div class="item">ITEM</div>
+        <div class="item">ITEM</div>
     </div>
 </div>
 <?= $this->endSection(); ?>

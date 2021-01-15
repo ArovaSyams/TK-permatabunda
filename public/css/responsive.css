@@ -7,11 +7,11 @@
   }
   .nav ul li a:hover {
     color: wheat;
-    transition: .5s;
+    transition: 0.5s;
   }
   nav {
-      transition: 0.7s;
-      padding: 40px 100px;
+    transition: 0.7s;
+    padding: 40px 100px;
   }
   .logo {
     color: white;
@@ -19,74 +19,77 @@
     transition: 0.6s;
   }
   nav.sticky {
-      background: white;
+    background: white;
   }
   nav.sticky .logo,
   nav.sticky ul li a {
-      color:black;
+    color: black;
   }
 }
 @media (max-width: 670px) {
-    nav {
-        background-color: white;
-        padding: 0 10px;
-    }
-    .nav ul li a {
-        color: black;
-      }
-    .logo {
-        color: black;
-        font-size: 10px;
+  nav {
+    background-color: white;
+    padding: 0 10px;
+  }
+  .nav ul li a {
+    color: black;
+  }
+  .logo {
+    color: black;
+    font-size: 10px;
+  }
+  .main-header {
+    padding: 100px 20px;
+  }
+  .header1 h1 {
+    font-size: 35px;
+  }
+  .header1 p {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  .header1 a {
+    margin-top: 10px;
+    width: 100%;
+  }
+  nav.sticky {
+    display: none;
+    background: white;
+  }
 
-      }
-    .main-header {
-        padding: 100px 20px;     
-        height: 50vh;
-    }
-    .header1 h1 {
-        font-size: 35px;
-    }
-    .header1 p {
-        margin-top: 20px;
-        font-size: 15px;
-    }
-    .header1 a {
-        margin-top: 10px;
-        width: 100%;
-    }
-    nav.sticky {
-        display: none;
-        background: white;
-    } 
+  /* __________________Main-1____________ */
 
-    /* __________________Main-1____________ */
+  .cards-view {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .card {
+    margin: 15px 0px;
+  }
 
-    .cards-view {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 40px;
-    }
-    .card {
-        margin: 15px 0px;
-    }
+  /* _____________main-2____________ */
 
-    /* _____________main-2____________ */
+  .main-2 {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .foto {
+    position: relative;
+    width: 100%;
+  }
+  .foto img {
+    width: 100%;
+  }
+  .main-2 .tentang {
+      padding: 60px 20px;
+      width: 100%;
+  }
 
-    .main-2 {
-        flex-direction: column;
-        height: 500px;
-      }
-    .foto img {
-        width: 100%;
-    }
-    .tentang {
-        padding-top: 30px;
-        width: 100%;
-    }
 
-    /* ______________Footer____________ */
-    
-    .judul h3 {
-        font-size: 30px;
-    }
+  /* ______________Footer____________ */
+
+  .judul h3 {
+    font-size: 30px;
+  }
 }

@@ -13,6 +13,7 @@
     <!-- My Own CSS -->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/aos.css">
     <script src="https://kit.fontawesome.com/6599811285.js" crossorigin="anonymous"></script>
 
     <title><?= $title; ?></title>
@@ -40,6 +41,11 @@
             var nav = document.querySelector("nav");
             nav.classList.toggle("sticky", window.scrollY > 0);
         })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="/js/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init();
     </script>
 </body>
 

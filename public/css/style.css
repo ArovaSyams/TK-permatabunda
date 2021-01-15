@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -38,7 +37,7 @@ body {
   background-image: url(/img/frozen2-bg.jpg);
   background-size: cover;
   transition: 0.5s;
-  height: 100vh;
+  padding-bottom: 200px;
   padding-top: 220px;
   padding-left: 100px;
   padding-right: 100px;
@@ -69,9 +68,12 @@ body {
 .cards-view {
   display: flex;
   margin-bottom: 90px;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
 }
-.card {
-  margin: 0px 20px;
+.cards-view .card {
+  margin: 15px 20px;
 }
 .img {
   font-size: 70px;
@@ -82,19 +84,103 @@ body {
 /* ____________________________main-2____________________________ */
 
 .main-2 {
-  height: 352px;
   width: 100%;
-  background-color:#DEDEDE;
+  background-color: #dedede;
+  display: flex;
+}
+.foto {
+  position: relative;
+  width: 50%;
 }
 .foto img {
-  width: 50%;
-  height: 100%;
-  float: left;
+  width: 100%;
 }
-.tentang {
+.main-2 .tentang {
   padding: 100px 40px;
   float: left;
   width: 50%;
+}
+
+/* __________________________Main-3______________________________ */
+
+.main-3 .head{
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 45px;
+}
+.berita-card {
+  overflow-x: auto;
+  overflow-y: none;
+  position: relative;
+  width: 100%;
+  display: flex;
+  /* justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; */
+  padding: 30px;
+}
+.berita-card::-webkit-scrollbar {
+  display: none;
+}
+.berita-card .cards {
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .5);
+  transition: 0.5s ease-in-out;
+}
+.berita-card .cards:hover {
+  height: 420px;
+}
+.berita-card .cards .imgbx {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 5px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .5);
+}
+.berita-card .cards .imgbx img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+.berita-card .cards .berita {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.berita-card .cards:hover .berita  {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+/* __________________________Main-4__________________________________ */
+
+.scroll {
+  display: flex;
+  overflow-x: auto;
+}
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+.item {
+  min-width: 150px;
+  height: 100px;
+  background: #111;
+  margin: 10px;
 }
 
 /* ____________________________Footer____________________________ */
