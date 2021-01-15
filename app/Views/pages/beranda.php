@@ -67,7 +67,7 @@
             </div>
             <div class="berita">
                 <h2>Berita Terkini</h2>
-                <p>adipisicing elit. Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi reprehenderit consequatur.</p>
+                <p>Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi <a href="">Selengkapnya</a></p>
             </div>
         </div>
         <div class="cards">
@@ -76,7 +76,7 @@
             </div>
             <div class="berita">
                 <h2>Berita Terkini</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi reprehenderit consequatur.</p>
+                <p>Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi <a href="">Selengkapnya</a></p>
             </div>
         </div>
         <div class="cards">
@@ -85,7 +85,7 @@
             </div>
             <div class="berita">
                 <h2>Berita Terkini</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi reprehenderit consequatur.</p>
+                <p>Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi <a href="">Selengkapnya</a></p>
             </div>
         </div>
         <div class="cards">
@@ -94,7 +94,7 @@
             </div>
             <div class="berita">
                 <h2>Berita Terkini</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi reprehenderit consequatur.</p>
+                <p>Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi <a href="">Selengkapnya</a></p>
             </div>
         </div>
         <div class="cards">
@@ -103,7 +103,7 @@
             </div>
             <div class="berita">
                 <h2>Berita Terkini</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi reprehenderit consequatur.</p>
+                <p>Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi <a href="">Selengkapnya</a></p>
             </div>
         </div>
         <div class="cards">
@@ -112,7 +112,7 @@
             </div>
             <div class="berita">
                 <h2>Berita Terkini</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi reprehenderit consequatur.</p>
+                <p>Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi <a href="">Selengkapnya</a></p>
             </div>
         </div>
     </div>
