@@ -64,6 +64,7 @@ body {
   text-align: center;
   margin-top: 60px;
   margin-bottom: 40px;
+  font-weight: 600;
 }
 .cards-view {
   display: flex;
@@ -107,10 +108,10 @@ body {
   text-align: center;
   margin-top: 100px;
   margin-bottom: 45px;
+  font-weight: 600;
 }
 .berita-card {
   overflow-x: auto;
-  overflow-y: none;
   position: relative;
   width: 100%;
   display: flex;
@@ -168,20 +169,42 @@ body {
 }
 
 /* __________________________Main-4__________________________________ */
-
-.scroll {
+.main-4 {
+  width: 100%;
+}
+.label h2 {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.imgs {
+  position: relative;
   display: flex;
-  overflow-x: auto;
+  background-color:rgb(0, 119, 255);
 }
-.scroll::-webkit-scrollbar {
-  display: none;
+.img-1, .img-2, .img-3 {
+  transition: 0.6s;
 }
-.item {
-  min-width: 150px;
-  height: 100px;
-  background: #111;
-  margin: 10px;
+.img-1:hover {
+  opacity: 0.6;
+  cursor: pointer;  
 }
+.img-2:hover {
+  opacity: 0.6;
+  cursor: pointer;  
+}
+.img-3:hover {
+  opacity: 0.6;
+  cursor: pointer;  
+}
+.imgs img {
+  width: 100%;
+}
+.imgs a {
+  width: 33.33%;
+}
+
 
 /* ____________________________Footer____________________________ */
 footer {

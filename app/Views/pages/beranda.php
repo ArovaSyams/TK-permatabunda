@@ -48,7 +48,7 @@
 </div>
 
 <div class="main-2">
-    <div class="foto" data-aos="fade-right" data-aos-duration="1500"  data-aos-offset="350">
+    <div class="foto" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="350">
         <img src="/img/how to train 3-bg.jpg" alt="">
     </div>
     <div class="tentang" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-offset="350">
@@ -67,7 +67,7 @@
             </div>
             <div class="berita">
                 <h2>Berita Terkini</h2>
-                <p>et consectetur adipisicing elit. Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi reprehenderit consequatur.</p>
+                <p>adipisicing elit. Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi reprehenderit consequatur.</p>
             </div>
         </div>
         <div class="cards">
@@ -118,15 +118,13 @@
     </div>
 </div>
 <div class="main-4">
-    <div class="scroll">
-        <div class="item">ITEM</div>
-        <div class="item">ITEM</div>
-        <div class="item">ITEM</div>
-        <div class="item">ITEM</div>
-        <div class="item">ITEM</div>
-        <div class="item">ITEM</div>
-        <div class="item">ITEM</div>
-        <div class="item">ITEM</div>
+    <div class="label">
+        <h2>GALERI</h2>
+    </div>
+    <div class="imgs">
+        <a href=""><img class="img-1" src="/img/childs-play-bg.jpg" alt=""></a>
+        <a href=""><img class="img-2" src="/img/frozen2-bg.jpg" alt=""></a>
+        <a href=""><img class="img-3" src="/img/how to train 3-bg.jpg" alt=""></a>
     </div>
 </div>
 <?= $this->endSection(); ?>
