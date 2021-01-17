@@ -10,19 +10,19 @@
           <a class="active" aria-current="page" href="/">BERANDA</a>
         </li>
         <li class="nav-item">
-          <a aria-current="page" href="#">PROFIL</a>
+          <a aria-current="page" href="/profil">PROFIL</a>
         </li>
         <li class="nav-item">
-          <a aria-current="page" href="#">PENDIDIKAN</a>
+          <a aria-current="page" href="/pendidikan">PENDIDIKAN</a>
         </li>
         <li class="nav-item">
-          <a aria-current="page" href="#">GALERI</a>
+          <a aria-current="page" href="/galeri">GALERI</a>
         </li>
         <li class="nav-item">
-          <a aria-current="page" href="#">BERITA</a>
+          <a aria-current="page" href="/berita">BERITA</a>
         </li>
         <li class="nav-item">
-          <a aria-current="page" href="#">HUBUNGI</a>
+          <a aria-current="page" href="/hubungi">HUBUNGI</a>
         </li>
       </ul>
       <a href="" class="btn btn-primary ppdb">PPDB</a>

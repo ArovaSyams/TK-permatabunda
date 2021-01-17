@@ -54,7 +54,7 @@
     <div class="tentang" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-offset="350">
         <h2>Tentang Kami</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab adipisci, id optio inventore veritatis architecto sed quia cupiditate. Inventore placeat quae esse quidem voluptas ipsa alias beatae mollitia expedita maiores.</p>
-        <a href="">Selengkapnya</a>
+        <a href="/profil">Selengkapnya</a>
     </div>
 </div>
 
@@ -63,7 +63,7 @@
     <div class="berita-card">
         <div class="cards">
             <div class="imgbx">
-                <img src="/img/vec.jpg" alt="">
+                <img src="/img/avenger-endgame.jpg" alt="">
             </div>
             <div class="berita">
                 <h2>Berita Terkini</h2>
@@ -122,7 +122,7 @@
         <h2>GALERI</h2>
     </div>
     <div class="imgs">
-        <a href=""><img class="img-1" src="/img/childs-play-bg.jpg" alt=""></a>
+        <a href=""><img class="img-1" src="/img/avenger-endgame.jpg" alt=""></a>
         <a href=""><img class="img-2" src="/img/frozen2-bg.jpg" alt=""></a>
         <a href=""><img class="img-3" src="/img/how to train 3-bg.jpg" alt=""></a>
     </div>
