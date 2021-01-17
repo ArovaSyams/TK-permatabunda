@@ -32,6 +32,8 @@
                         <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
                     </ul>
                 </ul>
+                <h5>Tujuan</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sapiente accusamus quam facilis, iusto, suscipit molestiae alias sequi, earum asperiores veniam libero ab recusandae animi ducimus dolorum quos dicta? Provident.</p>
             </div>
         </div>
     </div>
