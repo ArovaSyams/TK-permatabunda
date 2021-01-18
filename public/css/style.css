@@ -34,29 +34,38 @@ body {
 }
 /* =========================================== BERANDA ====================================== */
 /* ----------- Main-Header------------- */
-.main-header {
-  background-image: url(/img/frozen2-bg.jpg);
-  background-size: cover;
-  transition: 0.5s;
-  padding-bottom: 200px;
-  padding-top: 220px;
-  padding-left: 100px;
-  padding-right: 100px;
+
+.header1 {
+  width: 100%;
   align-items: center;
   text-align: center;
+  position: relative;
 }
-.header1 a {
+.header1 img {
+  width: 100%;
+  height: 600px;
+}
+.header1 .btn{
+  position: absolute;
   border-radius: 5px;
+  top: 340px;
+  margin: 0 auto;
+  display: block;
+  left: 560px;
 }
 .header1 h1 {
-  text-align: center;
+  position: absolute;
   color: white;
   font-size: 50px;
+  top: 190px;
+  width: 100%;
 }
 .header1 p {
-  text-align: center;
+  position: absolute;
   color: white;
   font-size: 20px;
+  top: 260px;
+  width: 100%;
 }
 
 /* ____________________________main-1___________________________ */
@@ -101,7 +110,7 @@ body {
 }
 .main-2 .tentang {
   padding: 100px 40px;
-  float: left;  
+  float: left;
   width: 50%;
 }
 
@@ -217,17 +226,19 @@ body {
 
 /* ____________________________Main-1______________________________ */
 
+.profile {
+  width: 100%;
+}
 .profile-main-1 {
   background-color: blue;
   text-align: center;
   position: relative;
   width: 100%;
-  
 }
 .profile-main-1 img {
   width: 100%;
   height: 550px;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .profile-main-1 h1 {
   position: absolute;
@@ -247,7 +258,7 @@ body {
 .profile-main-2 {
   padding: 90px 250px;
   text-align: center;
-  background-color: #D4DDE3;
+  background-color: #d4dde3;
 }
 .profile-main-2 h2 {
   margin-bottom: 40px;
@@ -293,6 +304,31 @@ body {
   margin-right: 40px;
   text-align: right;
   margin-top: 50px;
+}
+
+/* =============================================== PENDIDIKAN ===================================================== */
+/* ____________________________Main-1____________________________ */
+
+.pendidikan {
+  width: 100%;
+}
+.pendidikan-main-1 {
+  background-color: #2B4c5D;
+}
+.pendidikan-img {
+  width: 500px;
+  height: 400px;
+}
+.pendidikan-img img {
+  width: 100%;
+  height: 100%;
+}
+.accordion {
+  padding: 100px;
+  color: white;
+}
+.accordion-button {
+  color: white;
 }
 
 /* ____________________________Footer____________________________ */

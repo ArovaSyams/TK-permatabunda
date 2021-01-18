@@ -3,7 +3,7 @@
 <?= $this->section('content'); ?>
 <div class="profile">
     <div class="profile-main-1">
-        <img src="/img/frozen2-bg.jpg" alt="">
+        <img src="/img/frozen2-bg.jpg" class="img-fluid" alt="">
         <h1>Tentang Kami</h1>
         <h5>TK PERMATA BUNDA BENGKULU</h5>
     </div>
@@ -18,7 +18,7 @@
     <div class="profile-main-3">
         <div class="visi-misi">
             <div class="vm-img">
-                <img data-aos="flip-right" data-aos-duration="1500" src="/img/how to train 3-bg.jpg" alt="">
+                <img data-aos="flip-right" data-aos-duration="1500" src="/img/how to train 3-bg.jpg"alt="">
             </div>
             <div class="vm-content">
                 <h2>Visi Dan Misi</h2>

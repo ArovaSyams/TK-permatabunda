@@ -38,19 +38,26 @@
     color: black;
     font-size: 10px;
   }
-  .main-header {
-    padding: 100px 20px;
+  .header1 img{
+    height: 460px;
+  }
+  .header1 .btn {
+    top: 360px;
   }
   .header1 h1 {
+    top: 140px;
     font-size: 35px;
   }
   .header1 p {
+    top: 210px;
     margin-top: 20px;
     font-size: 15px;
   }
-  .header1 a {
+  .header1 .btn {
+    top: 310px;
     margin-top: 10px;
     width: 100%;
+    left: 0px;
   }
   nav.sticky {
     display: none;
@@ -89,7 +96,7 @@
   /* _________________main-4___________________ */
 
   .imgs {
-    height: 200px;
+    height: 150px;
   }
 
   /* =============PROFIL==================== */
@@ -157,6 +164,12 @@
   }
   .sambutan-content h2 {
     text-align: center;
+  }
+
+  /* ===============PENDIDIKAN================== */
+
+  .accordion {
+    padding: 50px;
   }
 
   /* ______________Footer____________ */

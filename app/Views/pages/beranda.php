@@ -1,12 +1,12 @@
 <?= $this->extend('layout/template'); ?>
 
 <?= $this->section('content'); ?>
-<div class="main-header">
-    <div class="header1">
-        <h1 data-aos="fade-down" data-aos-duration="1500">TK PERMATA BUNDA BENGKULU</h1>
-        <p>Taman Kanak-kanak Permata Bunda adalah TK yang berbasis islami dibawah naungan DWP (Dharma Wanita Persatuan) IAIN Bengkulu </p>
-        <a data-aos="fade-up" data-aos-duration="1500" href="#" class="btn btn-primary col-2">Daftar sekarang</a>
-    </div>
+
+<div class="header1">
+    <img src="/img/frozen2-bg.jpg" class="img-fluid" alt="">
+    <h1 data-aos="fade-down" data-aos-duration="1500">TK PERMATA BUNDA BENGKULU</h1>
+    <p>Taman Kanak-kanak Permata Bunda adalah TK yang berbasis islami dibawah naungan<br> DWP (Dharma Wanita Persatuan) IAIN Bengkulu </p>
+    <a data-aos="fade-up" data-aos-duration="1500" href="#" class="btn btn-primary col-2">Daftar sekarang</a>
 </div>
 
 <div class="main-1">
@@ -17,7 +17,7 @@
             <div class="card-body text-center">
                 <h5 class="card-title">Kegiatan Formal Sekolah</h5>
                 <p class="card-text">Sistem pembelajaran sesuai kurikulum</p>
-                <a href="#" class="btn btn-success">Selengkapnya</a>
+                <a href="/pendidikan" class="btn btn-success">Selengkapnya</a>
             </div>
         </div>
         <div data-aos="fade-up" data-aos-duration="1500" class="card" style="width: 18rem;">
@@ -25,7 +25,7 @@
             <div class="card-body text-center">
                 <h5 class="card-title">Pendidikan Islami</h5>
                 <p class="card-text">Menjalankan kewajiban terhadap Tuhan YME.</p>
-                <a href="#" class="btn btn-success">Selengkapnya</a>
+                <a href="/pendidikan" class="btn btn-success">Selengkapnya</a>
             </div>
         </div>
         <div data-aos="fade-down" data-aos-duration="1500" class="card" style="width: 18rem;">
@@ -33,7 +33,7 @@
             <div class="card-body text-center">
                 <h5 class="card-title">Ekstrakulikuler</h5>
                 <p class="card-text">Ekskul untuk meningkatkan bakat minat siswa</p>
-                <a href="#" class="btn btn-success">Selengkapnya</a>
+                <a href="/pendidikan" class="btn btn-success">Selengkapnya</a>
             </div>
         </div>
         <div data-aos="fade-up" data-aos-duration="1500" class="card" style="width: 18rem;">
@@ -41,7 +41,7 @@
             <div class="card-body text-center">
                 <h5 class="card-title">Program Unggulan</h5>
                 <p class="card-text">Sebagai penunjang kualitas siswa</p>
-                <a href="#" class="btn btn-success">Selengkapnya</a>
+                <a href="/pendidikan" class="btn btn-success">Selengkapnya</a>
             </div>
         </div>
     </div>
