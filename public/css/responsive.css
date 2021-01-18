@@ -175,10 +175,18 @@
 
   .galeri {
     flex-direction: column;
-    padding: 70px;
+    padding: 40px;
   }
   .galeri-foto {
     width: 100%;
+  }
+  /* ================== BERITA ==================== */
+
+  .berita {
+    padding: 40px;
+  }
+  .img-berita {
+    height: 180px;
   }
 
   /* ______________Footer____________ */

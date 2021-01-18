@@ -361,17 +361,13 @@ body {
 .berita {
   padding: 100px;
 }
-.card-berita {
-  height: 280px;
-}
 .img-berita {
   height: 280px;
 }
 .img-berita img{
   width: 100%;
   height: 100%;
-}
-.card-bodies{
+  border-radius: 5px;
 }
 
 /* ____________________________Footer____________________________ */
