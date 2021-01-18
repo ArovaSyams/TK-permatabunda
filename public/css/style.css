@@ -331,6 +331,31 @@ body {
   color: white;
 }
 
+/* ============================================== GALERI ===================================== */
+/* ___________________________main____________________________ */
+.head {
+  background-color: #022534;
+  height: 55px;
+}
+.judul-galeri {
+  margin-top: 50px;
+  text-align: center;
+}
+.galeri {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px;
+}
+.galeri-foto {
+  width: 48%;
+  margin: 10px;
+}
+.galeri-foto img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
 /* ____________________________Footer____________________________ */
 footer {
   background-color: #022534;

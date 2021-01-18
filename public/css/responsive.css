@@ -171,6 +171,15 @@
   .accordion {
     padding: 50px;
   }
+  /* ===============GALERI====================== */
+
+  .galeri {
+    flex-direction: column;
+    padding: 70px;
+  }
+  .galeri-foto {
+    width: 100%;
+  }
 
   /* ______________Footer____________ */
 

@@ -7,42 +7,42 @@ class Pages extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Beranda | TK Permata Bunda Bengkulu'
+            'title' => 'TK Permata Bunda Bengkulu | Beranda'
         ];
         return view('pages/beranda', $data);
     }
     public function profil()
     {
         $data = [
-            'title' => 'Profil | TK Permata Bunda Bengkulu'
+            'title' => 'TK Permata Bunda Bengkulu | Profil'
         ];
         return view('pages/profil', $data);
     }
     public function pendidikan()
     {
         $data = [
-            'title' => 'Pendidikan | TK Permata Bunda Bengkulu'
+            'title' => 'TK Permata Bunda Bengkulu | Pendidikan'
         ];
         return view('pages/pendidikan', $data);
     }
     public function galeri()
     {
         $data = [
-            'title' => 'Galeri | TK Permata Bunda Bengkulu'
+            'title' => 'TK Permata Bunda Bengkulu | Galeri'
         ];
         return view('pages/galeri', $data);
     }
     public function berita()
     {
         $data = [
-            'title' => 'Berita | TK Permata Bunda Bengkulu'
+            'title' => 'TK Permata Bunda Bengkulu | Berita'
         ];
         return view('pages/berita', $data);
     }
     public function hubungi()
     {
         $data = [
-            'title' => 'Hubungi | TK Permata Bunda Bengkulu'
+            'title' => 'TK Permata Bunda Bengkulu | Hubungi'
         ];
         return view('pages/hubungi', $data);
     }
