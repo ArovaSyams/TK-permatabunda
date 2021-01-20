@@ -45,7 +45,7 @@ body {
   width: 100%;
   height: 600px;
 }
-.header1 .btn{
+.header1 .btn {
   position: absolute;
   border-radius: 5px;
   top: 340px;
@@ -313,7 +313,7 @@ body {
   width: 100%;
 }
 .pendidikan-main-1 {
-  background-color: #2B4c5D;
+  background-color: #2b4c5d;
 }
 .pendidikan-img {
   width: 500px;
@@ -364,7 +364,7 @@ body {
 .img-berita {
   height: 280px;
 }
-.img-berita img{
+.img-berita img {
   width: 100%;
   height: 100%;
   border-radius: 5px;
@@ -377,7 +377,7 @@ body {
   padding: 100px;
 }
 .hub {
-  color:  #022534;
+  color: #022534;
   font-size: 50px;
 }
 .link {
@@ -408,7 +408,12 @@ footer {
   font-size: 35px;
   cursor: pointer;
 }
+.foot a {
+  margin-top: 30px;
+}
+
+/* ==================================== LOGIN ==================================== */
+
 .login {
-  margin: 0px 70px;
-  color: #fff;
+  margin: 80px 450px;
 }

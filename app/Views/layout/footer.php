@@ -10,18 +10,6 @@
             <a href=""><i class="bi bi-instagram media"></i></a>
             <a href=""><i class="bi bi-whatsapp media"></i></a>
         </div>
-    </div>
-    <div class="login">
-        <form action="/auth/login" method="post">
-            <div class="mb-3">
-                <label for="username" class="form-label">Username</label>
-                <input type="email" class="form-control" id="username" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password">
-            </div>
-            <button type="submit" class="btn btn-primary">Login</button>
-        </form>
+        <a href="/auth" class="btn btn-primary">Login</a>
     </div>
 </footer>
