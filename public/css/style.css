@@ -116,7 +116,7 @@ body {
 
 /* __________________________Main-3______________________________ */
 
-.main-3 .head {
+.main-3 .beranda-head {
   text-align: center;
   margin-top: 100px;
   margin-bottom: 45px;
@@ -335,7 +335,7 @@ body {
 /* ___________________________main____________________________ */
 .head {
   background-color: #022534;
-  height: 55px;
+  height: 54px;
 }
 .judul-galeri {
   margin-top: 50px;
@@ -368,6 +368,22 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 5px;
+}
+
+/* ======================================= HUBUNGI ============================================= */
+/* ____________________________main______________________________ */
+
+.hubungi {
+  padding: 100px;
+}
+.hub {
+  color:  #022534;
+  font-size: 50px;
+}
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
 }
 
 /* ____________________________Footer____________________________ */

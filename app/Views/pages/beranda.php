@@ -59,7 +59,7 @@
 </div>
 
 <div class="main-3">
-    <h2 class="head">BERITA TERKINI</h2>
+    <h2 class="beranda-head">BERITA TERKINI</h2>
     <div class="berita-card">
         <div class="cards">
             <div class="imgbx">
