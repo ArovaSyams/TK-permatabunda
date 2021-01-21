@@ -7,10 +7,9 @@
     <hr>
     <div class="contact">
         <p class="link"><i class="fas fa-map-marked-alt hub"></i>&nbsp &nbsp Jln. Telaga Dewa, Pagar Dewa, Kec. Selebar, Kota Bengkulu, Bengkulu, 38211</p>
-        <a href="" class="link"><i class="bi bi-facebook hub"></i>&nbsp facebook.com</a><br>
-        <a href="" class="link"><i class="bi bi-envelope-fill hub"></i>&nbsp gmail.com</a><br>
-        <a href="" class="link"><i class="bi bi-instagram hub"></i>&nbsp instagram.com</a><br>
-        <a href="" class="link"><i class="bi bi-whatsapp hub"></i>&nbsp whatsapp.com</a>
+        <p class="link"><i class="fas fa-phone hub"></i>&nbsp 0822-3183-0866</p>
+        <p class="link"><i class="bi bi-whatsapp hub"></i>&nbsp 0822-3183-0866</p>
+        <p class="link"><i class="bi bi-envelope-fill hub"></i>&nbsp tkpermatabunda1998@gmail.com</p><br>
     </div>
 </div>
 <?= $this->endSection(); ?>

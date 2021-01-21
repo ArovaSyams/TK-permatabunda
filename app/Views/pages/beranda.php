@@ -3,7 +3,7 @@
 <?= $this->section('content'); ?>
 
 <div class="header1">
-    <img src="/img/frozen2-bg.jpg" class="img-fluid" alt="">
+    <img src="/img/beranda1.jpg" class="img-fluid" alt="">
     <h1 data-aos="fade-down" data-aos-duration="1500">TK PERMATA BUNDA BENGKULU</h1>
     <p>Taman Kanak-kanak Permata Bunda adalah TK yang berbasis islami dibawah naungan<br> DWP (Dharma Wanita Persatuan) IAIN Bengkulu </p>
     <a data-aos="fade-up" data-aos-duration="1500" href="#" class="btn btn-primary col-2">Daftar sekarang</a>

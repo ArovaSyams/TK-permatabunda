@@ -272,7 +272,7 @@ body {
   padding: 40px;
 }
 .vm-img {
-  width: 140%;
+  width: 110%;
   height: 100%;
 }
 .vm-img img {
@@ -292,7 +292,7 @@ body {
   padding: 40px;
 }
 .sambutan-img {
-  width: 180%;
+  width: 160%;
   height: 100%;
 }
 .sambutan-img img {
@@ -313,7 +313,7 @@ body {
   width: 100%;
 }
 .pendidikan-main-1 {
-  background-color: #2b4c5d;
+  background-color: #DEDEDE;
 }
 .pendidikan-img {
   width: 500px;
@@ -325,10 +325,10 @@ body {
 }
 .accordion {
   padding: 100px;
-  color: white;
+  color: black;
 }
 .accordion-button {
-  color: white;
+  color: black;
 }
 
 /* ============================================== GALERI ===================================== */
