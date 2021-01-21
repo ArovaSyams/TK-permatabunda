@@ -2,6 +2,8 @@
 
 <?= $this->section('content'); ?>
 
+<?= session()->getFlashdata('pesan'); ?>
+
 <div class="header1">
     <img src="/img/frozen2-bg.jpg" class="img-fluid" alt="">
     <h1 data-aos="fade-down" data-aos-duration="1500">TK PERMATA BUNDA BENGKULU</h1>

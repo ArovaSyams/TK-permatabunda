@@ -39,6 +39,8 @@ $routes->get('/berita', 'Pages::berita');
 $routes->get('/hubungi', 'Pages::hubungi');
 
 $routes->get('/login', 'Auth::index');
+$routes->get('/logout', 'Auth::logout');
+
 
 /**
  * --------------------------------------------------------------------

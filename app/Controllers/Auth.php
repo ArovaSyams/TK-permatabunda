@@ -7,7 +7,6 @@ use App\Models\AuthModel;
 class Auth extends BaseController
 {
     protected $authModel;
-
     public function __construct()
     {
         $this->authModel = new AuthModel();
@@ -15,8 +14,9 @@ class Auth extends BaseController
 
     public function index()
     {
-        $la = $this->authModel->findAll();
-        d($la);
+        // if (session()->has('admin')) {
+        //     return redirect()->to('/pages');
+        // }
         $data = [
             'title' => 'TK Permata Bunda | Login',
             'validation' => \Config\Services::validation()
@@ -47,22 +47,29 @@ class Auth extends BaseController
         $admin = $this->authModel->where(['username' => $username])->first();
 
         // cek username
-        if($admin) {
+        if ($admin) {
 
-            if(password_verify($password, $admin['password'])) {
+            if (password_verify($password, $admin['password'])) {
 
                 session()->set('admin', $admin['username']);
 
-                return redirect()->to('/pages')->withInput();
-
-            }else {
-                session()->setFlashdata('pesan', '<div class="alert alert-danger" role="alert">Username tidak terdaftar</div>');
+                // if (session()->has('admin')) {
+                    session()->setFlashdata('pesan', '<div class="alert alert-success" role="alert">Selamat Datang Admin</div>');
+                    return redirect()->to('/');
+                // }
+            } else {
+                session()->setFlashdata('pesan', '<div class="alert alert-danger" role="alert">Password tidak terdaftar</div>');
                 return redirect()->to('index')->withInput();
             }
         } else {
             session()->setFlashdata('pesan', '<div class="alert alert-danger" role="alert">Username tidak terdaftar</div>');
             return redirect()->to('index')->withInput();
         }
-        
+    }
+
+    public function logout()
+    {
+        unset($_SESSION);
+        return redirect()->to('/');
     }
 }

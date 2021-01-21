@@ -10,6 +10,10 @@
             <a href=""><i class="bi bi-instagram media"></i></a>
             <a href=""><i class="bi bi-whatsapp media"></i></a>
         </div>
-        <a href="/auth" class="btn btn-primary">Login</a>
+        
+            <a href="/logout" class="btn btn-danger">Logout</a>
+        
+            <a href="/login" class="btn btn-primary">Login</a>
+        
     </div>
 </footer>
