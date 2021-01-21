@@ -46,4 +46,14 @@ class Pages extends BaseController
         ];
         return view('pages/hubungi', $data);
     }
+    public function panduan() {
+        if (!session()->has('admin')) {
+            return redirect()->to('/');
+        }
+
+        $data = [
+            'title' => 'TK Permata Bunda Bengkulu | Panduan'
+        ];
+        return view('pages/panduan', $data);
+    }
 }

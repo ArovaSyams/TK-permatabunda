@@ -10,10 +10,10 @@
             <a href=""><i class="bi bi-instagram media"></i></a>
             <a href=""><i class="bi bi-whatsapp media"></i></a>
         </div>
-        
+        <?php if (session()->has('admin')) :?>
             <a href="/logout" class="btn btn-danger">Logout</a>
-        
+        <?php else :?>
             <a href="/login" class="btn btn-primary">Login</a>
-        
+        <?php endif;?>
     </div>
 </footer>

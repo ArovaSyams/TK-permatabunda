@@ -37,6 +37,7 @@ $routes->get('/pendidikan', 'Pages::pendidikan');
 $routes->get('/galeri', 'Pages::galeri');
 $routes->get('/berita', 'Pages::berita');
 $routes->get('/hubungi', 'Pages::hubungi');
+$routes->get('/panduan', 'Pages::panduan');
 
 $routes->get('/login', 'Auth::index');
 $routes->get('/logout', 'Auth::logout');

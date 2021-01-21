@@ -8,7 +8,7 @@
         <form action="/auth/login" method="post">
             <div class="mb-3">
                 <label for="username" class="form-label">Username</label>
-                <input type="text" class="form-control <?= ($validation->hasError('username')) ? 'is-invalid' : ''; ?>" id="username" name="username" aria-describedby="emailHelp" placeholder="Username" value="<?= old('username'); ?>">
+                <input type="text" class="form-control <?= ($validation->hasError('username')) ? 'is-invalid' : ''; ?>" id="username" name="username" aria-describedby="emailHelp" placeholder="Username" value="<?= old('username'); ?>" autofocus>
                 <div class="invalid-feedback">
                     <?= $validation->getError('username'); ?>
                 </div>

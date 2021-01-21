@@ -14,9 +14,10 @@ class Auth extends BaseController
 
     public function index()
     {
-        // if (session()->has('admin')) {
-        //     return redirect()->to('/pages');
-        // }
+        
+        if (session()->has('admin')) {
+            return redirect()->to('/pages');
+        }
         $data = [
             'title' => 'TK Permata Bunda | Login',
             'validation' => \Config\Services::validation()
@@ -53,10 +54,10 @@ class Auth extends BaseController
 
                 session()->set('admin', $admin['username']);
 
-                // if (session()->has('admin')) {
-                    session()->setFlashdata('pesan', '<div class="alert alert-success" role="alert">Selamat Datang Admin</div>');
+                if (session()->has('admin')) {
+                    session()->setFlashdata('pesan', '<div class="alert alert-success" role="alert">Selamat Datang Admin <a href="/panduan">apa yang bisa dilakukan?</a></div>');
                     return redirect()->to('/');
-                // }
+                }
             } else {
                 session()->setFlashdata('pesan', '<div class="alert alert-danger" role="alert">Password tidak terdaftar</div>');
                 return redirect()->to('index')->withInput();
@@ -69,7 +70,8 @@ class Auth extends BaseController
 
     public function logout()
     {
-        unset($_SESSION);
+        session()->remove('admin');
+        session()->setFlashdata('pesan', '<div class="alert alert-success" role="alert">Anda telah keluar</div>');
         return redirect()->to('/');
     }
 }

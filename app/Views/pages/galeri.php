@@ -6,7 +6,7 @@
 <div class="galeri-atas">
     <h2 class="judul-galeri">Galeri Sekolah</h2>
     <hr>
-    <?php if (session()->has('admin')) :; ?>
+    <?php if (session()->has('admin')) : ?>
         <a href="" class="btn btn-success">Tambahkan</a>
     <?php endif; ?>
 </div>
