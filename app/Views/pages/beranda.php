@@ -3,7 +3,7 @@
 <?= $this->section('content'); ?>
 
 <div class="header1">
-    <img src="/img/beranda1.jpg" class="img-fluid" alt="">
+    <img src="/img/beranda.jpg" class="img-fluid" alt="">
     <h1 data-aos="fade-down" data-aos-duration="1500">TK PERMATA BUNDA BENGKULU</h1>
     <p>Taman Kanak-kanak Permata Bunda adalah TK yang berbasis islami dibawah naungan<br> DWP (Dharma Wanita Persatuan) IAIN Bengkulu </p>
     <a data-aos="fade-up" data-aos-duration="1500" href="#" class="btn btn-primary col-2">Daftar sekarang</a>
@@ -51,11 +51,11 @@
 
 <div class="main-2">
     <div class="foto" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="350">
-        <img src="/img/how to train 3-bg.jpg" alt="">
+        <img src="/img/img5.jpeg" alt="">
     </div>
     <div class="tentang" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-offset="350">
         <h2>Tentang Kami</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab adipisci, id optio inventore veritatis architecto sed quia cupiditate. Inventore placeat quae esse quidem voluptas ipsa alias beatae mollitia expedita maiores.</p>
+        <p>PAUD Permata Bunda didirikan pada tahun 1997 dibawah naungan Yayasan Permata Bunda Dharma Wanita IAIN Bengkulu. Tokoh yang paling berjasa dalam membidangi lahirnya PAUD Permata Bunda adalah Umi Husnaini dan Ibu Asiyah (Ibu Rektor IAIN Bengkulu).</p>
         <a href="/profil">Selengkapnya</a>
     </div>
 </div>
@@ -124,9 +124,9 @@
         <h2>GALERI</h2>
     </div>
     <div class="imgs">
-        <a href=""><img class="img-1" src="/img/avenger-endgame.jpg" alt=""></a>
-        <a href=""><img class="img-2" src="/img/frozen2-bg.jpg" alt=""></a>
-        <a href=""><img class="img-3" src="/img/how to train 3-bg.jpg" alt=""></a>
+        <a href="/galeri"><img class="img-1" src="/img/img1.jpg" alt=""></a>
+        <a href="/galeri"><img class="img-2" src="/img/img2.jpg" alt=""></a>
+        <a href="/galeri"><img class="img-3" src="/img/img3.jpeg" alt=""></a>
     </div>
 </div>
 <?= $this->endSection(); ?>
