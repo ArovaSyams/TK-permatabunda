@@ -42,6 +42,7 @@ $routes->get('/panduan', 'Pages::panduan');
 $routes->get('/login', 'Auth::index');
 $routes->get('/logout', 'Auth::logout');
 
+$routes->get('/admin', 'Admin::index');
 
 /**
  * --------------------------------------------------------------------
