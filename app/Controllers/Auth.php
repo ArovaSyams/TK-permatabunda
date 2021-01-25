@@ -55,16 +55,16 @@ class Auth extends BaseController
                 session()->set('admin', $admin['username']);
 
                 if (session()->has('admin')) {
-                    session()->setFlashdata('pesan', '<div class="alert alert-success" role="alert">Selamat Datang Admin <a href="/panduan">apa yang bisa dilakukan?</a></div>');
-                    return redirect()->to('/');
+                    session()->setFlashdata('pesan', '<div class="alert alert-success" role="alert">Selamat Datang Admin <a href="/panduan">Selengkapnya</a></div>');
+                    return redirect()->to('/admin');
                 }
             } else {
-                session()->setFlashdata('pesan', '<div class="alert alert-danger" role="alert">Password tidak terdaftar</div>');
-                return redirect()->to('index')->withInput();
+                session()->setFlashdata('pesan', '<div class="alert alert-danger" role="alert">Password anda salah</div>');
+                return redirect()->to('/login')->withInput();
             }
         } else {
-            session()->setFlashdata('pesan', '<div class="alert alert-danger" role="alert">Username tidak terdaftar</div>');
-            return redirect()->to('index')->withInput();
+            session()->setFlashdata('pesan', '<div class="alert alert-danger" role="alert">Username anda salah</div>');
+            return redirect()->to('/login')->withInput();
         }
     }
 

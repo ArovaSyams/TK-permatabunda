@@ -36,6 +36,7 @@ $routes->get('/profil', 'Pages::profil');
 $routes->get('/pendidikan', 'Pages::pendidikan');
 $routes->get('/galeri', 'Pages::galeri');
 $routes->get('/berita', 'Pages::berita');
+$routes->get('/berita/detail/(:num)', 'Pages::berita/$1');
 $routes->get('/hubungi', 'Pages::hubungi');
 $routes->get('/panduan', 'Pages::panduan');
 
@@ -43,6 +44,10 @@ $routes->get('/login', 'Auth::index');
 $routes->get('/logout', 'Auth::logout');
 
 $routes->get('/admin', 'Admin::index');
+$routes->get('/admin/galeri', 'Admin::galeri');
+$routes->get('/admin/berita', 'Admin::berita');
+$routes->get('/admin/ppdb', 'Admin::ppdb');
+
 
 /**
  * --------------------------------------------------------------------

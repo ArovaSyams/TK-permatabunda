@@ -24,6 +24,12 @@
         <li class="nav-item">
           <a aria-current="page" href="/hubungi">HUBUNGI</a>
         </li>
+        <?php if (session()->get('admin')) : ?>
+          <li class="nav-item">
+            <a aria-current="page" href="/admin">ADMIN</a>
+          </li>
+        <?php else : ?>
+        <?php endif; ?>
       </ul>
       <a href="" class="btn btn-primary ppdb">PPDB</a>
     </div>
