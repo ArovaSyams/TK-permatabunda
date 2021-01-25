@@ -6,7 +6,7 @@ class Admin extends BaseController
 {
     public function index()
     {
-        if(!session()->has('admin')) {
+        if (!session()->has('admin')) {
             return redirect()->to('/');
         }
 
@@ -15,9 +15,9 @@ class Admin extends BaseController
         ];
         return view('admin/index', $data);
     }
-    public function galeri() 
+    public function galeri()
     {
-        if(!session()->has('admin')) {
+        if (!session()->has('admin')) {
             return redirect()->to('/');
         }
 
@@ -26,5 +26,4 @@ class Admin extends BaseController
         ];
         return view('admin/galeri', $data);
     }
-
 }
