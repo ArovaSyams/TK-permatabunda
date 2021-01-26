@@ -26,7 +26,7 @@
                     </div>
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGaleri" aria-expanded="false" aria-controls="collapseGaleri">
                         <div class="sb-nav-link-icon"><i class="bi bi-images"></i></div>
-                        Tambah Galeri
+                        Galeri Sekolah
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
                     <div class="collapse" id="collapseGaleri" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
@@ -40,7 +40,7 @@
                     </div>
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBerita" aria-expanded="false" aria-controls="collapseBerita">
                         <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                        Tambah Berita
+                        Berita Sekolah
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
                     <div class="collapse" id="collapseBerita" aria-labelledby="headingThree" data-parent="#sidenavAccordion">

@@ -33,9 +33,11 @@ class Pages extends BaseController
     }
     public function galeri()
     {
+        $urutan = $this->layoutModel->orderBy('id', 'DESC');
         $data = [
             'title' => 'TK Permata Bunda Bengkulu | Galeri',
-            'layout' => $this->layoutModel->findAll(),
+            'layout' => $urutan->paginate(8, 'galeri'),
+            'pager' => $this->layoutModel->pager,
             'layoutSelect' => $this->layoutModel
         ];
         return view('pages/galeri', $data);

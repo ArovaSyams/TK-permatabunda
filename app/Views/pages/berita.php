@@ -2,6 +2,8 @@
 
 <?= $this->section('content'); ?>
 <div class="head"></div>
+<h1>Berita Terkini</h1>
+<hr>
 <div class="berita">
     <div class="card card-berita mb-3" style="max-width: 100%;">
       <div class="row g-0">

@@ -45,6 +45,9 @@ $routes->get('/logout', 'Auth::logout');
 
 $routes->get('/admin', 'Admin::index');
 $routes->get('/admin/galeri', 'Admin::galeri');
+$routes->get('/admin/galeri/(:num)', 'Admin::editGaleri/$1');
+$routes->get('/admin/updategaleri/(:num)', 'Admin::updateGaleri/$1');
+$routes->get('/admin/deletegaleri/(:num)', 'Admin::deleteGaleri/$1');
 $routes->get('/admin/addgaleri', 'Admin::addgaleri');
 $routes->get('/admin/berita', 'Admin::berita');
 $routes->get('/admin/addberita', 'Admin::addberita');

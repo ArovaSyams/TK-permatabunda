@@ -10247,3 +10247,15 @@ body {
 .sb-sidenav-light .sb-sidenav-footer {
   background-color: #e9ecef;
 }
+.galeri {
+  flex-wrap: wrap;
+  display: flex;
+}
+.galeri-foto {
+  width: 48.7%;
+  margin: 7px;
+}
+.galeri-foto img {
+  width: 100%;
+  margin-bottom: 5px;
+}

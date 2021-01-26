@@ -10,7 +10,6 @@
     <?= session()->getFlashdata('pesan'); ?>
 </div>
 
-
 <div class="main-1">
     <h2>KEGIATAN PEMBELAJARAN DI SEKOLAH</h2>
     <div class="cards-view">

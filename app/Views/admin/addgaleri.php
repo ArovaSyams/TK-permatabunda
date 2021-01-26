@@ -5,6 +5,7 @@
 <h1>Tambah Foto Galeri</h1>
 <hr>
 <form action="/admin/savegaleri" method="post" enctype="multipart/form-data">
+    <?= csrf_field(); ?>
     <div class="mb-3">
         <label for="nama-foto" class="form-label">Nama Foto</label>
         <input type="text" class="form-control <?= ($validation->hasError('nama-foto')) ? 'is-invalid' : ''; ?>" id="nama-foto" name="nama-foto" placeholder="Masukkan Nama Foto" value="<?= old('nama-foto'); ?>">

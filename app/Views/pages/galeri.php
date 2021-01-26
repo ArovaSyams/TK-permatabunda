@@ -4,7 +4,7 @@
 
 <div class="head"></div>
 <div class="galeri-atas">
-    <h2 class="judul-galeri">Galeri Sekolah</h2>
+    <h1 class="judul-galeri">Galeri Sekolah</h1>
     <hr>
 </div>
 <div class="galeri">
@@ -16,9 +16,9 @@
         </div>
     <?php endforeach; ?>
 </div>
+<?= $pager->links('galeri', 'galeri_pagination'); ?>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
