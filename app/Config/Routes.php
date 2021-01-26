@@ -45,7 +45,9 @@ $routes->get('/logout', 'Auth::logout');
 
 $routes->get('/admin', 'Admin::index');
 $routes->get('/admin/galeri', 'Admin::galeri');
+$routes->get('/admin/addgaleri', 'Admin::addgaleri');
 $routes->get('/admin/berita', 'Admin::berita');
+$routes->get('/admin/addberita', 'Admin::addberita');
 $routes->get('/admin/ppdb', 'Admin::ppdb');
 
 

@@ -1,9 +1,15 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\LayoutModel;
 
 class Pages extends BaseController
 {
+    protected $layoutModel;
+    public function __construct() {
+        $this->layoutModel = new LayoutModel();
+    }
+
     public function index()
     {
         $data = [
@@ -28,7 +34,9 @@ class Pages extends BaseController
     public function galeri()
     {
         $data = [
-            'title' => 'TK Permata Bunda Bengkulu | Galeri'
+            'title' => 'TK Permata Bunda Bengkulu | Galeri',
+            'layout' => $this->layoutModel->findAll(),
+            'layoutSelect' => $this->layoutModel
         ];
         return view('pages/galeri', $data);
     }

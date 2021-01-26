@@ -3,7 +3,7 @@
 <?= $this->section('content'); ?>
 <div class="profile">
     <div class="profile-main-1">
-        <img src="/img/beranda3.jpg" class="img-fluid" alt="">
+        <img src="/img/beranda-profile.jpeg" class="img-fluid" alt="">
         <h1>Tentang Kami</h1>
         <h5>TK PERMATA BUNDA BENGKULU</h5>
     </div>

@@ -24,14 +24,34 @@
                             <a class="nav-link" href="/hubungi">Hubungi</a>
                         </nav>
                     </div>
-                    <a class="nav-link" href="/admin/galeri">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGaleri" aria-expanded="false" aria-controls="collapseGaleri">
                         <div class="sb-nav-link-icon"><i class="bi bi-images"></i></div>
                         Tambah Galeri
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
-                    <a class="nav-link" href="/admin/berita">
+                    <div class="collapse" id="collapseGaleri" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link" href="/admin/addgaleri">
+                                <div class="sb-nav-link-icon"><i class="fas fa-plus"></i></div>
+                                Tambah
+                            </a>
+                            <a class="nav-link" href="/admin/galeri">Galeri</a>
+                        </nav>
+                    </div>
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBerita" aria-expanded="false" aria-controls="collapseBerita">
                         <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                         Tambah Berita
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
+                    <div class="collapse" id="collapseBerita" aria-labelledby="headingThree" data-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link" href="/admin/addberita">
+                                <div class="sb-nav-link-icon"><i class="fas fa-plus"></i></div>
+                                Tambah
+                            </a>
+                            <a class="nav-link" href="/">Berita</a>
+                        </nav>
+                    </div>
 
                     <div class="sb-sidenav-menu-heading">PPDB</div>
                     <a class="nav-link" href="tables.html">

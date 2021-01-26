@@ -8,8 +8,32 @@
     <hr>
 </div>
 <div class="galeri">
-    <div class="galeri-foto">
-        <img src="/img/frozen2-bg.jpg" alt="">
+    <?php foreach ($layout as $l) : ?>
+        <div class="galeri-foto">
+            <button id="foto" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-namafoto="<?= $l['nama_foto']; ?>" data-bs-foto="/img/<?= $l['foto']; ?>" data-bs-keterangan="<?= $l['keterangan']; ?>" data-bs-created="<?= $l['created_at']; ?>">
+                <img src="/img/<?= $l['foto']; ?>" class="img-photo">
+            </button>
+        </div>
+    <?php endforeach; ?>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modal-galeri">
+                <img src="" class="img-modal">
+                <p class="keterangan-modal"></p>
+                <p>dibuat pada : <span class="created-modal"></span></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            </div>
+        </div>
     </div>
 </div>
 
