@@ -4,7 +4,7 @@
 
 <div class="pendidikan">
     <div class="profile-main-1">
-        <img src="/img/beranda3.jpg" class="img-fluid" alt="">
+        <img src="/img/pages/beranda3.jpg" class="img-fluid" alt="">
         <h1>Pendidikan</h1>
         <h5>TK PERMATA BUNDA BENGKULU</h5>
     </div>

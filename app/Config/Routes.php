@@ -36,7 +36,7 @@ $routes->get('/profil', 'Pages::profil');
 $routes->get('/pendidikan', 'Pages::pendidikan');
 $routes->get('/galeri', 'Pages::galeri');
 $routes->get('/berita', 'Pages::berita');
-$routes->get('/berita/detail/(:num)', 'Pages::berita/$1');
+$routes->get('/berita/detail/(:num)', 'Pages::detailBerita/$1');
 $routes->get('/hubungi', 'Pages::hubungi');
 $routes->get('/panduan', 'Pages::panduan');
 
@@ -45,12 +45,15 @@ $routes->get('/logout', 'Auth::logout');
 
 $routes->get('/admin', 'Admin::index');
 $routes->get('/admin/galeri', 'Admin::galeri');
-$routes->get('/admin/galeri/(:num)', 'Admin::editGaleri/$1');
-$routes->get('/admin/updategaleri/(:num)', 'Admin::updateGaleri/$1');
-$routes->get('/admin/deletegaleri/(:num)', 'Admin::deleteGaleri/$1');
-$routes->get('/admin/addgaleri', 'Admin::addgaleri');
+$routes->get('/admin/addgaleri', 'AdminGaleri::addgaleri');
+$routes->get('/admin/galeri/(:num)', 'AdminGaleri::editGaleri/$1');
+$routes->get('/admin/updategaleri/(:num)', 'AdminGaleri::updateGaleri/$1');
+$routes->delete('/admin/deletegaleri/(:num)', 'AdminGaleri::deleteGaleri/$1');
 $routes->get('/admin/berita', 'Admin::berita');
-$routes->get('/admin/addberita', 'Admin::addberita');
+$routes->get('/admin/addberita', 'AdminBerita::addberita');
+$routes->get('/admin/berita/(:num)', 'AdminBerita::editBerita/$1');
+$routes->get('/admin/updateberita/(:num)', 'AdminBerita::updateBerita/$1');
+$routes->delete('/admin/deleteberita/(:num)', 'AdminBerita::deleteBerita/$1');
 $routes->get('/admin/ppdb', 'Admin::ppdb');
 
 

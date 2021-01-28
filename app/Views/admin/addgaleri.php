@@ -4,7 +4,7 @@
 
 <h1>Tambah Foto Galeri</h1>
 <hr>
-<form action="/admin/savegaleri" method="post" enctype="multipart/form-data">
+<form action="/admingaleri/savegaleri" method="post" enctype="multipart/form-data">
     <?= csrf_field(); ?>
     <div class="mb-3">
         <label for="nama-foto" class="form-label">Nama Foto</label>

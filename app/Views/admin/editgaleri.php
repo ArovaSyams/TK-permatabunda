@@ -4,7 +4,7 @@
 
 <h1>Edit Foto Galeri</h1>
 <hr>
-<form action="/admin/updategaleri/<?= $layout['id']; ?>" method="post" enctype="multipart/form-data">
+<form action="/admingaleri/updategaleri/<?= $layout['id']; ?>" method="post" enctype="multipart/form-data">
     <?= csrf_field(); ?>
     <input type="hidden" name="id" value="<?= $layout['id']; ?>">
     <input type="hidden" name="foto-lama" value="<?= $layout['foto']; ?>">

@@ -10,8 +10,8 @@
 <div class="galeri">
     <?php foreach ($layout as $l) : ?>
         <div class="galeri-foto">
-            <button id="foto" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-namafoto="<?= $l['nama_foto']; ?>" data-bs-foto="/img/<?= $l['foto']; ?>" data-bs-keterangan="<?= $l['keterangan']; ?>" data-bs-created="<?= $l['created_at']; ?>">
-                <img src="/img/<?= $l['foto']; ?>" class="img-photo">
+            <button id="foto" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-namafoto="<?= $l['nama_foto']; ?>" data-bs-foto="/img/galeri/<?= $l['foto']; ?>" data-bs-keterangan="<?= $l['keterangan']; ?>" data-bs-created="<?= $l['created_at']; ?>">
+                <img src="/img/galeri/<?= $l['foto']; ?>" class="img-photo">
             </button>
         </div>
     <?php endforeach; ?>

@@ -10259,3 +10259,21 @@ body {
   width: 100%;
   margin-bottom: 5px;
 }
+/* ______________BERITA____________ */
+
+.berita {
+  padding: 100px 200px;
+}
+.img-berita {
+  height: 230px;
+}
+.img-berita img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+@media (max-width: 670px) {
+  .galeri-foto {
+    width: 100%;
+  }
+}

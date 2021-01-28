@@ -38,7 +38,7 @@
     color: black;
     font-size: 10px;
   }
-  .header1 img{
+  .header1 img {
     height: 340px;
   }
   .header1 h1 {
@@ -129,12 +129,12 @@
 
   /* ____________Main-3____________ */
 
-  .profile-main-3 {
+  .profile-main-4 {
     width: 100%;
   }
   .visi-misi {
     flex-direction: column;
-    padding: 40px;
+    padding: 30px;
   }
   .vm-img {
     width: 100%;
@@ -143,30 +143,51 @@
     margin-left: 0px;
   }
   .vm-content h2 {
-    margin-top: 20px;
     text-align: center;
+  }
+  .vm-content {
+    text-align: left;
   }
 
   /* ______________Main-4_______________ */
 
-  .profile-main-4 {
+  .profile-main-3 {
     width: 100%;
   }
   .sambutan {
     flex-direction: column;
-    padding: 40px;
+    padding: 30px;
     width: 100%;
   }
   .sambutan-img {
     width: 100%;
   }
   .sambutan-content {
-    margin-left: 0px;
-  }
-  .sambutan-content h2 {
     text-align: center;
+    margin-left: 0;
   }
-
+  
+  /* ___________________Main-5______________ */
+  
+  .profile-main-5 {
+    width: 100%;
+  }
+  .tenaga-pengajar {
+    flex-direction: column;
+    padding: 30px;
+    width: 100%;
+  }
+  .tenaga-pengajar-img {
+    width: 100%;
+  }
+  .tenaga-pengajar-content {
+    margin-left: 0;
+  }
+  .tenaga-pengajar-content h2 {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
   /* ===============PENDIDIKAN================== */
 
   .accordion {

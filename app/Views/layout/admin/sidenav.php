@@ -49,7 +49,7 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-plus"></i></div>
                                 Tambah
                             </a>
-                            <a class="nav-link" href="/">Berita</a>
+                            <a class="nav-link" href="/admin/berita">Berita</a>
                         </nav>
                     </div>
 

@@ -3,7 +3,7 @@
 <?= $this->section('content'); ?>
 
 <div class="header1">
-    <img src="/img/beranda.jpg" class="img-fluid" alt="">
+    <img src="/img/pages/beranda.jpg" class="img-fluid" alt="">
     <h1 data-aos="fade-down" data-aos-duration="1500">TK PERMATA BUNDA BENGKULU</h1>
     <p>Taman Kanak-kanak Permata Bunda adalah TK yang berbasis islami dibawah naungan<br> DWP (Dharma Wanita Persatuan) IAIN Bengkulu </p>
     <a data-aos="fade-up" data-aos-duration="1500" href="#" class="btn btn-primary col-2">Daftar sekarang</a>
@@ -50,7 +50,7 @@
 
 <div class="main-2">
     <div class="foto" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="350">
-        <img src="/img/img5.jpeg" alt="">
+        <img src="/img/pages/img5.jpeg" alt="">
     </div>
     <div class="tentang" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-offset="350">
         <h2>Tentang Kami</h2>
@@ -62,60 +62,18 @@
 <div class="main-3">
     <h2 class="beranda-head">BERITA TERKINI</h2>
     <div class="berita-card">
-        <div class="cards">
-            <div class="imgbx">
-                <img src="/img/avenger-endgame.jpg" alt="">
+        <?php foreach ($berita as $b) : ?>
+            <div class="cards">
+                <div class="imgbx">
+                    <img src="/img/berita/<?= $b['foto']; ?>" alt="">
+                </div>
+                <div class="berita">
+                    <h6><?= $b['judul_berita']; ?></h6>
+                    <p ><small class="text-muted">Diupload Pada : <?= $b['created_at']; ?></small></p>
+                    <a href="/berita/detail/<?= $b['id']; ?>" class="btn btn-success">Selengkapnya</a>
+                </div>
             </div>
-            <div class="berita">
-                <h2>Berita Terkini</h2>
-                <p>Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi <a href="">Selengkapnya</a></p>
-            </div>
-        </div>
-        <div class="cards">
-            <div class="imgbx">
-                <img src="/img/vec.jpg" alt="">
-            </div>
-            <div class="berita">
-                <h2>Berita Terkini</h2>
-                <p>Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi <a href="">Selengkapnya</a></p>
-            </div>
-        </div>
-        <div class="cards">
-            <div class="imgbx">
-                <img src="/img/vec.jpg" alt="">
-            </div>
-            <div class="berita">
-                <h2>Berita Terkini</h2>
-                <p>Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi <a href="">Selengkapnya</a></p>
-            </div>
-        </div>
-        <div class="cards">
-            <div class="imgbx">
-                <img src="/img/vec.jpg" alt="">
-            </div>
-            <div class="berita">
-                <h2>Berita Terkini</h2>
-                <p>Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi <a href="">Selengkapnya</a></p>
-            </div>
-        </div>
-        <div class="cards">
-            <div class="imgbx">
-                <img src="/img/vec.jpg" alt="">
-            </div>
-            <div class="berita">
-                <h2>Berita Terkini</h2>
-                <p>Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi <a href="">Selengkapnya</a></p>
-            </div>
-        </div>
-        <div class="cards">
-            <div class="imgbx">
-                <img src="/img/vec.jpg" alt="">
-            </div>
-            <div class="berita">
-                <h2>Berita Terkini</h2>
-                <p>Nam quae, sunt obcaecati voluptate natus quas aliquam voluptatibus minima quis vero autem esse! Eaque nam obcaecati est, expedita commodi <a href="">Selengkapnya</a></p>
-            </div>
-        </div>
+        <?php endforeach; ?>
     </div>
 </div>
 <div class="main-4">
@@ -123,9 +81,9 @@
         <h2>GALERI</h2>
     </div>
     <div class="imgs">
-        <a href="/galeri"><img class="img-1" src="/img/img1.jpg" alt=""></a>
-        <a href="/galeri"><img class="img-2" src="/img/img2.jpg" alt=""></a>
-        <a href="/galeri"><img class="img-3" src="/img/img3.jpeg" alt=""></a>
+        <a href="/galeri"><img class="img-1" src="/img/pages/img1.jpg" alt=""></a>
+        <a href="/galeri"><img class="img-2" src="/img/pages/img2.jpg" alt=""></a>
+        <a href="/galeri"><img class="img-3" src="/img/pages/img3.jpeg" alt=""></a>
     </div>
 </div>
 <?= $this->endSection(); ?>
