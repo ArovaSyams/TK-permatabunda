@@ -9,6 +9,77 @@ body {
 .brand {
   margin-right: 50px;
 }
+/* ==============================================Loading Pages================================== */
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  top: 40%;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: white;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+.overlay {
+  z-index: 999999;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(7, 49, 58);
+  text-align: center;
+}
+.overlay::-webkit-scrollbar {
+  display: none;
+}
 
 /* _______________Navbar________________ */
 
@@ -28,6 +99,7 @@ body {
 }
 .nav ul li a {
   font-weight: 500;
+  font-size: 15px;
 }
 .active {
   color: wheat;
@@ -51,9 +123,9 @@ body {
   position: absolute;
   border-radius: 5px;
   top: 340px;
-  margin: 0 auto;
-  display: block;
+  width: 0 auto;
   left: 560px;
+  display: block;
 }
 .header1 h1 {
   position: absolute;
@@ -328,7 +400,6 @@ body {
   margin-left: 40px;
 }
 
-
 /* =============================================== PENDIDIKAN ===================================================== */
 /* ____________________________Main-1____________________________ */
 
@@ -336,7 +407,7 @@ body {
   width: 100%;
 }
 .pendidikan-main-1 {
-  background-color: #DEDEDE;
+  background-color: #dedede;
 }
 .pendidikan-img {
   width: 500px;
@@ -381,7 +452,7 @@ body {
 }
 .galeri-foto img {
   border-radius: 2px;
-  width: 100%;  
+  width: 100%;
 }
 
 .modal-galeri {
@@ -404,7 +475,7 @@ body {
   padding: 40px 200px;
 }
 .img-berita {
-  height: 220px;
+  height: 230px;
 }
 .img-berita img {
   width: 100%;

@@ -55,7 +55,7 @@ class Auth extends BaseController
                 session()->set('admin', $admin['username']);
 
                 if (session()->has('admin')) {
-                    session()->setFlashdata('pesan', '<div class="alert alert-success" role="alert">Selamat Datang Admin <a href="/panduan">Selengkapnya</a></div>');
+                    session()->setFlashdata('pesan', '<div class="alert alert-success" role="alert">Selamat Datang Admin <a href="/panduan">Butuh bantuan?</a></div>');
                     return redirect()->to('/admin');
                 }
             } else {

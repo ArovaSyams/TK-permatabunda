@@ -21,7 +21,8 @@
     </div>
     <div class="mb-3">
         <label for="paragraf1" class="form-label">Isi Paragraf 1</label>
-        <textarea class="form-control <?= ($validation->hasError('paragraf')) ? 'is-invalid' : ''; ?>" id="paragraf1" name="paragraf1" rows="3" placeholder="Masukkan paragraf 1 (Wajib Diisi)"><?= old('paragraf1'); ?></textarea>
+        <textarea class="form-control <?= ($validation->hasError('paragraf1')) ? 'is-invalid' : ''; ?>" id="paragraf1" name="paragraf1" rows="3" placeholder="Masukkan paragraf 1 (Wajib Diisi)"><?= old('paragraf1'); ?></textarea>
+        <a href="/admin/panduanberita">panduan?</a>
         <div class="invalid-feedback">
             <?= $validation->getError('paragraf1'); ?>
         </div>

@@ -11,7 +11,16 @@ class AdminBerita extends BaseController
     {
         $this->beritaModel = new BeritaModel();
     }
-    public function addberita()
+    public function panduanBerita() {
+        if (!session()->has('admin')) {
+            return redirect()->to('/');
+        }
+        $data = [
+            'title' => 'Panduan Berita | TK Permata Bunda Bengkulu'
+        ];
+        return view('admin/panduanberita', $data);
+    }
+    public function addBerita()
     {
         if (!session()->has('admin')) {
             return redirect()->to('/');

@@ -20,7 +20,15 @@
     <title><?= $title; ?></title>
 </head>
 
-<body>
+<body onload="hideLoading();">
+    <div class="loading overlay">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
     <?= $this->include('layout/navbar'); ?>
 
     <?= $this->renderSection('content'); ?>
@@ -30,7 +38,8 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-
+    <script src="/js/fade.js"></script>
+    <script src="/js/galerimodal.js"></script>
     <script type="text/javascript">
         //Nav bar Transition
         window.addEventListener("scroll", function() {
@@ -42,32 +51,6 @@
     <script src="/js/aos.js"></script>
     <script type="text/javascript">
         AOS.init();
-    </script>
-    <script type="text/javascript">
-        var exampleModal = document.getElementById('exampleModal')
-        exampleModal.addEventListener('show.bs.modal', function(event) {
-            // Button that triggered the modal
-            var button = event.relatedTarget
-            // Extract info from data-bs-* attributes
-            var namafoto = button.getAttribute('data-bs-namafoto')
-            var foto = button.getAttribute('data-bs-foto')
-            var keterangan = button.getAttribute('data-bs-keterangan')
-            var created = button.getAttribute('data-bs-created')
-            // If necessary, you could initiate an AJAX request here
-            // and then do the updating in a callback.
-            //
-            // Update the modal's content.
-            var modalNamafoto = exampleModal.querySelector('.modal-title')
-            var modalKeterangan = exampleModal.querySelector('.keterangan-modal')
-            var modalCreated = exampleModal.querySelector('.created-modal')
-
-            modalNamafoto.textContent = namafoto
-            // modalFoto.value= foto
-            $('.img-modal').attr('src', foto)
-            modalKeterangan.textContent = keterangan
-            modalCreated.textContent = created
-
-        })
     </script>
 </body>
 
