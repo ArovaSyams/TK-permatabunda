@@ -51,7 +51,6 @@ $routes->get('/admin/updategaleri/(:num)', 'AdminGaleri::updateGaleri/$1');
 $routes->delete('/admin/deletegaleri/(:num)', 'AdminGaleri::deleteGaleri/$1');
 
 $routes->get('/admin/berita', 'Admin::berita');
-$routes->get('/admin/panduanberita', 'AdminBerita::panduanBerita');
 $routes->get('/admin/addberita', 'AdminBerita::addBerita');
 $routes->get('/admin/berita/(:num)', 'AdminBerita::editBerita/$1');
 $routes->get('/admin/updateberita/(:num)', 'AdminBerita::updateBerita/$1');
