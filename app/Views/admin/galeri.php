@@ -10,7 +10,7 @@
         <div class="galeri-foto">
             <img src="/img/galeri/<?= $l['foto']; ?>" alt="">
             <div class="row">
-                <a href="/admin/galeri/<?= $l['id']; ?>" class="btn btn-primary col ml-sm-3">Edit</a>
+                <a href="/admin/galeri/<?= $l['id']; ?>" class="btn btn-primary col" style="margin-left:11px;">Edit</a>
                 <form action="/admin/deletegaleri/<?= $l['id']; ?>" method="post" class="col">
                     <?= csrf_field(); ?>
                     <input type="hidden" name="_method" value="DELETE">

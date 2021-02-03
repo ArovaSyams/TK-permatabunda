@@ -52,9 +52,13 @@
                             <a class="nav-link" href="/admin/berita">Berita</a>
                         </nav>
                     </div>
+                    <a class="nav-link" href="/admin/contactus">
+                        <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                        Contact Us
+                    </a>
 
                     <div class="sb-sidenav-menu-heading">PPDB</div>
-                    <a class="nav-link" href="tables.html">
+                    <a class="nav-link" href="/admin/ppdb">
                         <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                         Siswa Baru
                     </a>

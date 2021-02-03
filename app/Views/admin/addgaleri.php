@@ -15,7 +15,7 @@
     </div>
     <div class="mb-3">
         <label for="keterangan" class="form-label">Keterangan</label>
-        <textarea class="form-control <?= ($validation->hasError('keterangan')) ? 'is-invalid' : ''; ?>" id="keterangan" name="keterangan" rows="3" placeholder="Masukkan Keterangan"><?= old('keterangan'); ?></textarea>
+        <textarea class="form-control <?= ($validation->hasError('keterangan')) ? 'is-invalid' : ''; ?>" id="keterangan" name="keterangan" rows="3" placeholder="Masukkan Keterangan (Opsional)"><?= old('keterangan'); ?></textarea>
         <div class="invalid-feedback">
             <?= $validation->getError('keterangan'); ?>
         </div>

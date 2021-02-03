@@ -29,28 +29,28 @@
     </div>
     <div class="mb-3">
         <label for="paragraf2" class="form-label">Paragraf 2</label>
-        <textarea class="form-control <?= ($validation->hasError('paragraf')) ? 'is-invalid' : ''; ?>" id="paragraf2" name="paragraf2" rows="3" placeholder="Masukkan paragraf 2 (Default)"><?= old('paragraf2'); ?></textarea>
+        <textarea class="form-control <?= ($validation->hasError('paragraf')) ? 'is-invalid' : ''; ?>" id="paragraf2" name="paragraf2" rows="3" placeholder="Masukkan paragraf 2 (Opsional)"><?= old('paragraf2'); ?></textarea>
         <div class="invalid-feedback">
             <?= $validation->getError('paragraf'); ?>
         </div>
     </div>
     <div class="mb-3">
         <label for="paragraf3" class="form-label">Paragraf 3</label>
-        <textarea class="form-control <?= ($validation->hasError('paragraf')) ? 'is-invalid' : ''; ?>" id="paragraf3" name="paragraf3" rows="3" placeholder="Masukkan paragraf 3 (Default)"><?= old('paragraf3'); ?></textarea>
+        <textarea class="form-control <?= ($validation->hasError('paragraf')) ? 'is-invalid' : ''; ?>" id="paragraf3" name="paragraf3" rows="3" placeholder="Masukkan paragraf 3 (Opsional)"><?= old('paragraf3'); ?></textarea>
         <div class="invalid-feedback">
             <?= $validation->getError('paragraf'); ?>
         </div>
     </div>
     <div class="mb-3">
         <label for="paragraf4" class="form-label">Paragraf 4</label>
-        <textarea class="form-control <?= ($validation->hasError('paragraf')) ? 'is-invalid' : ''; ?>" id="paragraf4" name="paragraf4" rows="3" placeholder="Masukkan paragraf 4 (Default)"><?= old('paragraf4'); ?></textarea>
+        <textarea class="form-control <?= ($validation->hasError('paragraf')) ? 'is-invalid' : ''; ?>" id="paragraf4" name="paragraf4" rows="3" placeholder="Masukkan paragraf 4 (Opsional)"><?= old('paragraf4'); ?></textarea>
         <div class="invalid-feedback">
             <?= $validation->getError('paragraf'); ?>
         </div>
     </div>
     <div class="mb-3">
         <label for="paragraf5" class="form-label">Paragraf 5</label>
-        <textarea class="form-control <?= ($validation->hasError('paragraf')) ? 'is-invalid' : ''; ?>" id="paragraf5" name="paragraf5" rows="3" placeholder="Masukkan paragraf 5 (Default)"><?= old('paragraf5'); ?></textarea>
+        <textarea class="form-control <?= ($validation->hasError('paragraf')) ? 'is-invalid' : ''; ?>" id="paragraf5" name="paragraf5" rows="3" placeholder="Masukkan paragraf 5 (Opsional)"><?= old('paragraf5'); ?></textarea>
         <div class="invalid-feedback">
             <?= $validation->getError('paragraf'); ?>
         </div>

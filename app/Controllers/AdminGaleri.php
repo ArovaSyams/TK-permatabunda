@@ -45,7 +45,7 @@ class AdminGaleri extends BaseController
                 ]
             ],
             'foto' => [
-                'rules' => 'uploaded[foto]|max_size[foto,4086]|is_image[foto]|mime_in[foto,image/jpg,image/jpeg,image/png]',
+                'rules' => 'uploaded[foto]|max_size[foto,4086]|is_image[foto]|mime_in[foto,image/jpg,image/jpeg,image/png,image/JPG]',
                 'errors' => [
                     'uploaded' => 'Harus ada foto yg di upload',
                     'max_size' => 'Ukuran gambar harus kurang dari 4Mb',
@@ -68,7 +68,7 @@ class AdminGaleri extends BaseController
             'foto' => $namaFoto
         ]);
         session()->setFlashdata('pesan', '<div class="alert alert-success" role="alert">Foto berhasil diupload</div>');
-        return redirect()->to('galeri');
+        return redirect()->to('/admin/galeri');
     }
     public function editGaleri($id)
     {

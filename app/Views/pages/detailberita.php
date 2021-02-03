@@ -1,6 +1,7 @@
 <?= $this->extend('layout/template'); ?>
 <?= $this->section('content'); ?>
 <div class="head"></div>
+<a href="/berita" class="btn btn-success berita-kembali">Kembali</a>
 <div class="detail-berita-body">
     <div class="detail-berita">
         <div class="card card-detail-berita">
@@ -21,11 +22,7 @@
                 <h4>Berita Lainnya</h4>
                 <?php foreach ($beritaLain as $bl) : ?>
                     <a href="/berita/detail/<?= $bl['id']; ?>" style="text-decoration: none; color: black;">
-                        <div class="card berita-lainnya">
-                            <div class="card-body">
-                                <h6><?= $bl['judul_berita']; ?></h6>
-                            </div>
-                        </div>
+                        <p class="berita-lainnya"><?= $bl['judul_berita']; ?></p>
                     </a>
                 <?php endforeach; ?>
             </div>

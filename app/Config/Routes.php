@@ -55,7 +55,12 @@ $routes->get('/admin/addberita', 'AdminBerita::addBerita');
 $routes->get('/admin/berita/(:num)', 'AdminBerita::editBerita/$1');
 $routes->get('/admin/updateberita/(:num)', 'AdminBerita::updateBerita/$1');
 $routes->delete('/admin/deleteberita/(:num)', 'AdminBerita::deleteBerita/$1');
-$routes->get('/admin/ppdb', 'Admin::ppdb');
+
+$routes->get('/admin/contactus', 'Admin::contactUs');
+$routes->delete('/admin/deletecontact/(:num)', 'Admin::deleteContactUs/$1');
+
+$routes->get('/admin/ppdb', 'Admin::PPDB');
+$routes->get('/admin/ppdbdetail', 'Admin::PPDBdetail');
 
 
 /**

@@ -98,6 +98,19 @@
     height: 150px;
   }
 
+  /* ______________main-5_____________________ */
+
+  .main-5 {
+    padding: 10px 20px;
+  }
+  .contact-beranda {
+    margin-top: 30px;
+    border-radius: 40px;
+  }
+  .col-8 {
+    width: 95%;
+  }
+
   /* =============PROFIL==================== */
   /* main-1 */
 
@@ -217,7 +230,7 @@
   /* ================HUBUNGI================ */
 
   .hubungi {
-    padding: 50px;
+    padding: 30px;
   }
 
   /* ______________Footer____________ */

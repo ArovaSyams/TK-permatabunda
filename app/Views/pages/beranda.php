@@ -69,11 +69,55 @@
                 </div>
                 <div class="berita">
                     <h6><?= $b['judul_berita']; ?></h6>
-                    <p ><small class="text-muted">Diupload Pada : <?= $b['created_at']; ?></small></p>
+                    <p><small class="text-muted">Diupload Pada : <?= $b['created_at']; ?></small></p>
                     <a href="/berita/detail/<?= $b['id']; ?>" class="btn btn-success">Selengkapnya</a>
                 </div>
             </div>
         <?php endforeach; ?>
+    </div>
+</div>
+<div class="main-5">
+    <div class="card contact-beranda">
+        <div class="card-body contact-body">
+            <h2>HUBUNGI KAMI</h2>
+            <form action="/pages/savecontact" method="post" class="col-8 contact-form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nama</label>
+                    <input type="text" class="form-control <?= ($validation->hasError('name')) ? 'is-invalid' : ''; ?>" id="name" name="name" placeholder="Masukkan Nama" value="<?= old('name'); ?>">
+                    <div class="invalid-feedback">
+                        <?= $validation->getError('name'); ?>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email / No. Handphone</label>
+                    <input type="text" class="form-control <?= ($validation->hasError('email')) ? 'is-invalid' : ''; ?>" id="email" name="email" placeholder="Alamat Email / Nomor Handphone" value="<?= old('email'); ?>">
+                    <div class="invalid-feedback">
+                        <?= $validation->getError('email'); ?>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="role" class="form-label">Kirim Sebagai</label>
+                    <select class="form-select col-sm-2 mr-3 <?= ($validation->hasError('role')) ? 'is-invalid' : ''; ?>" name="role">
+                        <option selected value="">-Pilih Peran-</option>
+                        <option value="Wali calon peserta didik baru">Wali calon peserta didik baru</option>
+                        <option value="Orang tua murid">Orang tua Murid</option>
+                        <option value="Pengunjung">Pengunjung</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        <?= $validation->getError('role'); ?>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="pesan" class="form-label">Pesan</label>
+                    <textarea class="form-control <?= ($validation->hasError('pesan')) ? 'is-invalid' : ''; ?>" id="pesan" name="pesan" rows="3" placeholder="Masukkan Pesan"><?= old('pesan'); ?></textarea>
+                    <div class="invalid-feedback">
+                        <?= $validation->getError('pesan'); ?>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+            <div class="text-muted contact-note">Catatan : Pesan anda akan kami jawab melalui email / No. handphone tertara dengan segera</div>
+        </div>
     </div>
 </div>
 <div class="main-4">
