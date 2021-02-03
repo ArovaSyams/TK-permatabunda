@@ -12,14 +12,14 @@
                 <th>Nama</th>
                 <th>Foto Soft</th>
                 <th>Akta Kelahiran</th>
-                <th>KTP Orangtua</th>
+                <th>KTP Orang tua</th>
                 <th>Kartu Keluarga</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1</td>
-                <td>Wifqo Arova Syams</td>
+                <td>Lorem, ipsum dolor.</td>
                 <td><img src="/img/PPDB/foto/foto-ex.JPG" class="akta"></td>
                 <td><img src="/img/PPDB/akta-kelahiran/akta-ex.png" class="akta"></td>
                 <td><img src="/img/PPDB/KTP/KTP-ex.JPG" class="ktp"></td>

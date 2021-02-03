@@ -22,7 +22,7 @@
                     <form action="/admin/deleteberita/<?= $b['id']; ?>" method="post" class="d-inline">
                         <?= csrf_field(); ?>
                         <input type="hidden" name="_method" value="DELETE">
-                        <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin?')">Delete</button>
+                        <button type="submit" class="btn btn-danger" onclick="return confirm('Semua informasi dari data ini akan dihapus secara permanen dan tidak dapat dikembalikan lagi, Apakah anda yakin?')">Delete</button>
                     </form>
                 </div>
             </div>

@@ -15,7 +15,7 @@ class ContactModel extends Model
         return $this->table('contact-us')->like('email-hp', $emailHp);
     }
 
-    public function searchName($role)
+    public function searchRole($role)
     {
         return $this->table('contact-us')->like('role', $role);
     }    

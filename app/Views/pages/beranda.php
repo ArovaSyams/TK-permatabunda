@@ -50,7 +50,7 @@
 
 <div class="main-2">
     <div class="foto" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="350">
-        <img src="/img/pages/img5.jpeg" alt="">
+        <img src="/img/pages/yayasan2.jpg" alt="">
     </div>
     <div class="tentang" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-offset="350">
         <h2>Tentang Kami</h2>
@@ -68,7 +68,7 @@
                     <img src="/img/berita/<?= $b['foto']; ?>" alt="">
                 </div>
                 <div class="berita">
-                    <h6><?= $b['judul_berita']; ?></h6>
+                    <p><?= $b['judul_berita']; ?></p>
                     <p><small class="text-muted">Diupload Pada : <?= $b['created_at']; ?></small></p>
                     <a href="/berita/detail/<?= $b['id']; ?>" class="btn btn-success">Selengkapnya</a>
                 </div>
@@ -107,16 +107,16 @@
                         <?= $validation->getError('role'); ?>
                     </div>
                 </div>
-                <div class="mb-3">
+                <div class="mb-2">
                     <label for="pesan" class="form-label">Pesan</label>
                     <textarea class="form-control <?= ($validation->hasError('pesan')) ? 'is-invalid' : ''; ?>" id="pesan" name="pesan" rows="3" placeholder="Masukkan Pesan"><?= old('pesan'); ?></textarea>
                     <div class="invalid-feedback">
                         <?= $validation->getError('pesan'); ?>
                     </div>
                 </div>
+                <div class="text-muted contact-note mb-1">Catatan: Pesan anda akan kami jawab melalui email / No. handphone tertara dengan segera</div>
                 <button type="submit" class="btn btn-primary">Kirim</button>
             </form>
-            <div class="text-muted contact-note">Catatan : Pesan anda akan kami jawab melalui email / No. handphone tertara dengan segera</div>
         </div>
     </div>
 </div>

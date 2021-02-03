@@ -2,7 +2,7 @@
 
 <?= $this->section('content'); ?>
 <div class="head"></div>
-<h1 style="text-align: center; margin-top: 40px;">Berita Terkini</h1>
+<h1 style="text-align: center; margin-top: 20px;">Berita Terkini</h1>
 <hr>
 <div class="berita">
   <?php foreach ($berita as $b) : ?>

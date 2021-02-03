@@ -20,6 +20,7 @@
                 <option value="Pengunjung">Pengunjung</option>
             </select>
             <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+            <a href="/admin/contactus" class="btn btn-success" style="float:right;"><i class="fas fa-redo-alt"></i></a>
         </div>
     </div>
 </form>
@@ -51,7 +52,7 @@
                         <form action="/admin/deletecontact/<?= $c['id']; ?>" method="post">
                             <?= csrf_field(); ?>
                             <input type="hidden" name="_method" value="DELETE">
-                            <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin?')"><i class="fas fa-trash"></i></button>
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Semua informasi dari data ini akan dihapus secara permanen dan tidak dapat dikembalikan lagi, Apakah anda yakin?')"><i class="fas fa-trash"></i></button>
                         </form>
                     </td>
                 </tr>
@@ -59,5 +60,6 @@
         </tbody>
     </table>
 </div>
+<?= $pager->links('contact-us', 'galeri_pagination'); ?>
 
 <?= $this->endSection(); ?>

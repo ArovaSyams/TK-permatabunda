@@ -53,7 +53,7 @@
                         </nav>
                     </div>
                     <a class="nav-link" href="/admin/contactus">
-                        <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                        <div class="sb-nav-link-icon"><i class="bi bi-envelope-fill media"></i></div>
                         Contact Us
                     </a>
 

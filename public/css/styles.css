@@ -10252,11 +10252,12 @@ body {
   display: flex;
 }
 .galeri-foto {
-  width: 48.7%;
-  margin: 7px;
+  width: 32%;
+  margin: 28px 7px;
 }
 .galeri-foto img {
   width: 100%;
+  height: 100%;
   margin-bottom: 5px;
 }
 /* ______________BERITA____________ */
@@ -10278,6 +10279,10 @@ body {
 }
 .ppdb-detail > tbody > tr > * {
   vertical-align: middle;
+  text-align: center;
+}
+.ppdb-detail > thead > tr > * {
+  text-align: center;
 }
 .ktp {
   width: 110px;

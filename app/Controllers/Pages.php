@@ -86,7 +86,7 @@ class Pages extends BaseController
         $urutan = $this->layoutModel->orderBy('id', 'DESC');
         $data = [
             'title' => 'TK Permata Bunda Bengkulu | Galeri',
-            'layout' => $urutan->paginate(8, 'galeri'),
+            'layout' => $urutan->paginate(12, 'galeri'),
             'pager' => $this->layoutModel->pager
         ];
         return view('pages/galeri', $data);
@@ -114,7 +114,8 @@ class Pages extends BaseController
     public function hubungi()
     {
         $data = [
-            'title' => 'TK Permata Bunda Bengkulu | Hubungi'
+            'title' => 'TK Permata Bunda Bengkulu | Hubungi',
+            'validation' => \Config\Services::validation()
         ];
         return view('pages/hubungi', $data);
     }

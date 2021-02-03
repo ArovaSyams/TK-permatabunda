@@ -77,11 +77,11 @@ class Admin extends BaseController
                 $contact = $this->contactModel;
             }
         }
-        // $urutan = ->orderBy('id', 'DESC');
+        $urutan = $contact->orderBy('id', 'DESC');
         $data = [
             'title' => 'Contact Us | TK Permata Bunda Bengkulu',
-            'contact' => $contact->paginate(8, 'contact-us'),
-            'pager' => $this->beritaModel->pager
+            'contact' => $urutan->paginate(8, 'contact-us'),
+            'pager' => $this->contactModel->pager
         ];
         return view('/admin/contactus', $data);
     }
