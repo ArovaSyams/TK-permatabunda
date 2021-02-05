@@ -5,7 +5,12 @@
 
 <h1 class="mt-4">Dashboard Admin</h1>
 <hr>
-<?= session()->getFlashdata('pesan'); ?>
+<?php if(session()->getFlashdata('pesan')) :?>
+<div class="alert alert-success" role="alert">
+    <?= session()->getFlashdata('pesan'); ?> <b><?= session()->get("admin") ?></b> <a href="/panduan">Butuh bantuan?</a>
+</div>
+<?php endif;?>
+
 <div class="row">
     <div class="col-xl-6 col-md-6">
         <div class="card bg-success text-white mb-4">

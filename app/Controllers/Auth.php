@@ -14,7 +14,7 @@ class Auth extends BaseController
 
     public function index()
     {
-        
+
         if (session()->has('admin')) {
             return redirect()->to('/pages');
         }
@@ -55,7 +55,7 @@ class Auth extends BaseController
                 session()->set('admin', $admin['username']);
 
                 if (session()->has('admin')) {
-                    session()->setFlashdata('pesan', '<div class="alert alert-success" role="alert">Selamat Datang Admin <a href="/panduan">Butuh bantuan?</a></div>');
+                    session()->setFlashdata('pesan', 'Selamat Datang');
                     return redirect()->to('/admin');
                 }
             } else {
@@ -73,5 +73,106 @@ class Auth extends BaseController
         session()->remove('admin');
         session()->setFlashdata('pesan', '<div class="alert alert-success" role="alert">Anda telah keluar</div>');
         return redirect()->to('/');
+    }
+    public function logoutSetting()
+    {
+        session()->remove('confirm');
+        session()->setFlashdata('pesan', '<div class="alert alert-success" role="alert">Ubah data dibatalkan</div>');
+        return redirect()->to('/admin/setting');
+    }
+    public function confirm()
+    {
+        if (!$this->validate([
+            'confirm-password' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Konfirmasi password harus diisi'
+                ]
+            ]
+        ])) {
+            return redirect()->to('/admin/setting')->withInput();
+        }
+        $password = $this->request->getVar('confirm-password');
+        $admin = $this->authModel->findAll();
+        foreach ($admin as $a) {
+            $pass = $a['password'];
+            $user = $a['username'];
+            if (password_verify($password, $pass)) {
+
+                session()->set('confirm', $user);
+                session()->setFlashdata('pesan', '<div class="alert alert-success" role="alert">Silahka Ubah Password Anda</div>');
+                return redirect()->to('/admin/setting');
+            }
+        }
+        session()->setFlashdata('pesan', '<div class="alert alert-danger" role="alert">Password anda salah</div>');
+        return redirect()->to('/admin/setting');
+    }
+    public function editAkun($id)
+    {
+        if (!$this->validate([
+            'password' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Password harus diisi'
+                ]
+            ]
+        ])) {
+            return redirect()->to('/admin/setting')->withInput();
+        }
+        $password = $this->request->getVar('password');
+        $password2 = $this->request->getVar('password2');
+        if ($password == $password2) {
+            $this->authModel->save([
+                'id' => $id,
+                'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
+            ]);
+            session()->remove('confirm');
+            session()->remove('admin');
+            session()->setFlashdata('pesan', '<div class="alert alert-success" role="alert">Password berhasil diubah, Silahkan Login</div>');
+            return redirect()->to('/auth/login');
+        } else {
+            session()->setFlashdata('pesan', '<div class="alert alert-danger" role="alert">Konfirmasi password anda salah</div>');
+            return redirect()->to('/admin/setting');
+        }
+    }
+    public function tambahAkun()
+    {
+        if (!$this->validate([
+            'username-baru' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Username harus diisi'
+                ]
+            ],
+            'password-baru' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Password harus diisi'
+                ]
+            ]
+        ])) {
+            return redirect()->to('/admin/setting')->withInput();
+        }
+        $password = $this->request->getVar('password-baru');
+        $password2 = $this->request->getVar('password-baru2');
+        if ($password == $password2) {
+            $this->authModel->save([
+                'username' => $this->request->getVar('username-baru'),
+                'password' => password_hash($this->request->getVar('password-baru'), PASSWORD_DEFAULT)
+            ]);
+            session()->remove('admin');
+            session()->setFlashdata('pesan', '<div class="alert alert-success" role="alert">Akun Telah ditambahkan silahkan login</div>');
+            return redirect()->to('/auth/login')->withInput();
+        } else {
+            session()->setFlashdata('pesan', '<div class="alert alert-danger" role="alert">Konfirmasi akun salah</div>');
+            return redirect()->to('/admin/setting')->withInput();
+        }
+    }
+    public function deleteakun($id)
+    {
+        session()->remove('admin');
+        $this->authModel->delete($id);
+        session()->setFlashdata('pesan', '<div class="alert alert-success" role="alert">Akun berhasil dihapus</div>');
+        return redirect()->to('/auth/login');
     }
 }

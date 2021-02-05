@@ -42,6 +42,9 @@ $routes->get('/panduan', 'Pages::panduan');
 
 $routes->get('/login', 'Auth::index');
 $routes->get('/logout', 'Auth::logout');
+$routes->get('/admin/setting', 'Admin::setting');
+$routes->get('/auth/editAkun/(:num)', 'Auth::editAkun/$1');
+$routes->delete('/auth/deleteakun/(:num)', 'Auth::deleteakun/$1');
 
 $routes->get('/admin', 'Admin::index');
 $routes->get('/admin/galeri', 'Admin::galeri');

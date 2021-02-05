@@ -5,17 +5,20 @@ namespace App\Controllers;
 use App\Models\LayoutModel;
 use App\Models\BeritaModel;
 use App\Models\ContactModel;
+use App\Models\AuthModel;
 
 class Admin extends BaseController
 {
     protected $layoutModel;
     protected $beritaModel;
     protected $contactModel;
+    protected $authModel;
     public function __construct()
     {
         $this->layoutModel = new LayoutModel();
         $this->beritaModel = new BeritaModel();
         $this->contactModel = new ContactModel();
+        $this->authModel = new AuthModel();
     }
 
     public function index()
@@ -29,6 +32,19 @@ class Admin extends BaseController
         ];
         return view('admin/index', $data);
     }
+    public function setting() {
+        if (!session()->has('admin')) {
+            return redirect()->to('/');
+        }
+        $data = [
+            'title' => 'Setting | TK Permata Bunda Bengkulu',
+            'admin' => $this->authModel->where('username', session()->get('admin'))->first( ),
+            'adminAll' => $this->authModel->findAll(),
+            'validation' => \Config\Services::validation()
+        ];
+        return view('admin/setting', $data);
+    }
+
     public function galeri()
     {
         if (!session()->has('admin')) {
